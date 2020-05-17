@@ -1,0 +1,2425 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+
+<title>Station Listing</title>
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+
+<!-- Wanna know what meta tags to use? https://support.google.com/webmasters/answer/79812?hl=en -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="XXXXXX">
+<meta name="keywords" content="National Climatic Data Center">
+<meta name="author" content="National Centers for Environmental Information (NCEI)">
+<meta name="application-name" content="XXXXXXX">
+<link rel="shortcut icon" href="https://www.ncdc.noaa.gov/favicon.ico">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.ncdc.noaa.gov/shared/v1/images/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.ncdc.noaa.gov/shared/v1/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.ncdc.noaa.gov/shared/v1/images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.ncdc.noaa.gov/shared/v1/images/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" href="https://www.ncdc.noaa.gov/shared/v1/images/apple-touch-icon.png" />
+<meta name="msapplication-tooltip" content="XXXXXXX" />
+<meta name="msapplication-task" content="name=NCDC;action-uri=https://www.ncdc.noaa.gov/;icon-uri=https://www.ncdc.noaa.gov/favicon.ico" />
+<meta name="msapplication-TileColor" content="#007EC6" />
+<meta name="msapplication-TileImage" content="https://www.ncdc.noaa.gov/shared/v1/images/apple-touch-icon-144.png" />
+<meta name="verify-v1" content="DjxBYfR0oM2KSNJl6i2BbxfTcXOGUnbglkT0QQj5KtI=" />
+
+<!-- The following is a speed hack for IE browsers -->
+<!--[if IE]><![endif]-->
+
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/shared.css" />
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/menus.css" />
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/extlink.css" />
+
+<link type="text/css" rel="stylesheet" media="screen and (max-width: 659px)" href="https://www.ncdc.noaa.gov/shared/v1/css/layout_320.css" />
+<link type="text/css" rel="stylesheet" media="screen and (min-width: 660px) and (max-width: 1023px)" href="https://www.ncdc.noaa.gov/shared/v1/css/layout_640.css" />
+<link type="text/css" rel="stylesheet" media="screen and (min-width: 1024px)" href="https://www.ncdc.noaa.gov/shared/v1/css/layout_1024.css" />
+
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/smoothness/jquery-ui-1.10.2.custom.css" />
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/ie8.css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/ie7.css" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/ie6.css" />
+<![endif]-->
+
+<!--[if gte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="https://www.ncdc.noaa.gov/shared/v1/css/ie.css" />
+<![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" integrity="sha384-j2BVfhFirIfIfLA3XlWy+TMlVQTr3QGEo7cvvKse2sOOe9rUxHjtEjz5HV4denAF" crossorigin="anonymous"></script>
+<script>WebFont.load({ google: { families: ['Open+Sans', 'Bitter'] } });</script>
+
+<!--script type="text/javascript" src="/crn/js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript" src="https://www.ncdc.noaa.gov/shared/v1/js/lib/jquery-ui-1.10.3.custom.min.js"></script-->
+
+
+<script type="text/javascript" src="/crn/js/jquery-3.5.0.min.js"></script>
+
+<!--[if lte IE 9]>
+	<script type="text/javascript" src="https://www.ncdc.noaa.gov/shared/v1/js/lib/html5shiv.min.js"></script>
+	<script type="text/javascript" src="https://www.ncdc.noaa.gov/shared/v1/js/lib/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="https://www.ncdc.noaa.gov/shared/v1/js/application.js"></script>
+
+<script type="text/javascript" src="/crn/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/crn/js/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/crn/js/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="/crn/js/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/crn/js/jquery.tablesorter.min.js"></script>
+
+<!-- Some reports generate very wide tables.  Those tables must be accessible to users, so we must prevent the hidding of overflow. -->
+<style type="text/css">
+    #content{
+        overflow: visible;
+    }
+</style>
+
+<script type="text/javascript">
+	/*====== CRN window popups ======*/
+
+    /* set experimental graph option */
+
+    var EXPERIMENTAL_GRAPH_KEY = "crn.useExperimentalGraphs";
+
+    function setExperimentalGraphOption(value) {
+        localStorage.setItem(EXPERIMENTAL_GRAPH_KEY, (!!value) ? "1" : "0");
+    }
+
+    function getExperimentalGraphOption() {
+        return "1" === localStorage.getItem(EXPERIMENTAL_GRAPH_KEY);
+    }
+
+    $(document).ready(function() {
+        $("#experimentalGraphCheckbox").prop("checked", getExperimentalGraphOption());
+    });
+
+	/* multigraph */
+	function openGraphWindow(queryParams, windowName) {
+	    var base = "/crn/" + (getExperimentalGraphOption() ? "graph2" : "graph");
+	    windowName = windowName.replace(/-\s/g, "_");
+	    window.open(base + '?'+queryParams, windowName, 'width=650,height=550,status=1');
+	}
+
+    function showGraph(graph, stationId, time, timezone) {
+        openGraphWindow('config=' + graph + '&station_ids=' + stationId + '&last=' + time + '&timezone=' + timezone, graph + stationId + time);
+    }
+
+</script>
+
+<link type="text/css" rel="stylesheet" href="/crn/css/alert.css" />
+
+    
+
+    
+
+	<meta name="robots" content="noindex, nofollow">
+
+	<style type="text/css">
+       td {
+           white-space: nowrap;
+       }
+    </style>
+
+
+</head>
+
+<body  >
+
+  <div id="main">
+
+        <!-- BEGIN Header -->
+        <header>
+            <div id="header" class="clearfix" role="banner">
+                <div class="inset clearfix">
+                    <a class="noaalink" href="https://www.noaa.gov/"></a>
+					<div class="title"><a href="https://www.ncdc.noaa.gov/" title="National Centers for Environmental Information">National Centers for Environmental Information<span>&nbsp;</span></a></div>
+                    <a href="https://www.commerce.gov/" id="headDOC" title="Click to visit the U.S. Department of Commerce Website"></a>
+                </div>
+            </div>
+
+			<!-- Required for 508 compliance -->
+            <div class="element-invisible">
+                <a class="element-invisible element-focusable" href="#main-content">Skip to main content</a><br />
+                <a class="element-invisible element-focusable" href="#site-search">Skip to site search</a>
+            </div>
+
+            <nav id="nav" class="clearfix" role="navigation">
+                <div class="inset">
+                    <ul class="mainNav" role="menubar">
+						<li role="menuitem"><a href="https://www.ncdc.noaa.gov/" title="Home">Home</a></li>
+                        <li role="menuitem"><a href="https://www.ncdc.noaa.gov/climate-information" title="Climate Information">Climate Information</a></li>
+                        <li role="menuitem"><a href="https://www.ncdc.noaa.gov/data-access" title="Data Access">Data Access</a></li>
+                        <li role="menuitem"><a href="https://www.ncdc.noaa.gov/customer-support" title="Customer Support">Customer Support</a></li>
+						<li role="menuitem"><a href="https://www.ncdc.noaa.gov/contact" title="Contact Us">Contact</a></li>
+						<li role="menuitem"><a href="https://www.ncdc.noaa.gov/about" title="About">About</a></li>
+                    </ul>
+                    <div class="navSearchForm" role="search">
+                        <form name="sitesearchform" method="get" action="https://search.usa.gov/search">
+                            <a id="site-search"></a>
+                            <fieldset>
+								<legend>Search for articles, products, and data at the National Centers for Environmental Information</legend>
+                                <input type="hidden" name="affiliate" value="NCDC" />
+                                <label for="sitesearch">Search Field:</label>
+								<input type="text" name="query" class="searchtext inputbox" id="sitesearch" value="Search" maxlength="50" tabindex="1" />
+                                <label for="sitesearchbutton">Search button:</label>
+                                <input type="submit" class="submitbutton" id="sitesearchbutton" value="Search" tabindex="2" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- /inset -->
+            </nav><!-- /#nav -->
+
+        </header>
+        <!-- END Header -->
+
+        <!-- BEGIN Breadcrumbs -->
+        <div id="breadcrumbs">
+            <div class="inset">
+
+                <a href="/crn" title="National Climatic Data Center">USCRN</a>
+                
+        &gt; <a href="/crn/data.html">Data</a>
+        &gt; <a href="/crn/reports.html">Reports</a>
+    
+                 &gt; Station Listing
+
+                <ul class="extraLinks">
+                    <ul class="extraLinks">
+    <li role="menuitem"> <a href="/crn/overview.html">Overview</a> </li>
+    <li role="menuitem"> <a href="/crn/data.html">Data</a> </li>
+    <li role="menuitem"> <a href="https://www.ncdc.noaa.gov/isis">Metadata</a> </li>
+    <li role="menuitem"> <a href="/crn/resources.html">Resources</a> </li>
+    <li role="menuitem"> <a href="/crn/contacts.html">Contacts</a> </li>
+</ul>
+                </ul>
+
+            </div>
+        </div>
+        <!-- END Breadcrumbs -->
+
+        <div id="ncei-alert" class="alert clearfix" style="display:none"></div>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $.ajax({
+	        url : "https://www.ncdc.noaa.gov/common/warning.html",
+	        success : function (data) {
+	        	if(data.trim().length > 0){
+	        	    $("#ncei-alert").html(data).show();
+	        	}
+	        }
+	    });
+	});
+</script>
+
+<div id="crn-alert" class="alert clearfix" style="display:none"></div>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $.ajax({
+	        url : "https://www.ncdc.noaa.gov/warnings/crn.txt",
+	        success : function (data) {
+	        	if(data.trim().length > 0){
+	        	    $("#crn-alert").html(data).show();
+	        	}
+	        }
+	    });
+	});
+</script>
+
+
+        <div id="content" class="clearfix">
+            <div class="inset">
+                
+
+	<h1> Station Listing </h1>
+
+    <table>
+     <tr>
+       <th>STATION</th>
+       <th>NETWORK</th>
+       <th>OPERATIONAL DATE</th>
+       <th>CLOSED DATE</th>
+       <th>LATITUDE</th>
+       <th>LONGITUDE</th>
+       <th>ELEVATION (FT)</th>
+     </tr>
+          <tr>
+       <td> AK Aleknagik 1 NNE</td>
+       <td>CRN</td>
+       <td>2019-10-09 22:00</td>
+       <td></td>
+       <td style="text-align:right;">59.28</td>
+       <td style="text-align:right;">-158.61</td>
+       <td style="text-align:right;">80</td>
+     </tr>
+     <tr>
+       <td> AK Bethel 87 WNW</td>
+       <td>CRN</td>
+       <td>2018-08-17 02:00</td>
+       <td></td>
+       <td style="text-align:right;">61.35</td>
+       <td style="text-align:right;">-164.08</td>
+       <td style="text-align:right;">153</td>
+     </tr>
+     <tr>
+       <td> AK Cordova 14 ESE</td>
+       <td>CRN</td>
+       <td>2017-07-27 19:00</td>
+       <td></td>
+       <td style="text-align:right;">60.47</td>
+       <td style="text-align:right;">-145.35</td>
+       <td style="text-align:right;">83</td>
+     </tr>
+     <tr>
+       <td> AK Deadhorse 3 S</td>
+       <td>CRN</td>
+       <td>2014-06-27 19:00</td>
+       <td></td>
+       <td style="text-align:right;">70.16</td>
+       <td style="text-align:right;">-148.46</td>
+       <td style="text-align:right;">30</td>
+     </tr>
+     <tr>
+       <td> AK Denali 27 N</td>
+       <td>CRN</td>
+       <td>2015-08-20 00:00</td>
+       <td></td>
+       <td style="text-align:right;">63.45</td>
+       <td style="text-align:right;">-150.87</td>
+       <td style="text-align:right;">2225</td>
+     </tr>
+     <tr>
+       <td> AK Fairbanks 11 NE</td>
+       <td>CRN</td>
+       <td>2002-08-09 22:00</td>
+       <td></td>
+       <td style="text-align:right;">64.97</td>
+       <td style="text-align:right;">-147.51</td>
+       <td style="text-align:right;">1140</td>
+     </tr>
+     <tr>
+       <td> AK Glennallen 64 N</td>
+       <td>CRN</td>
+       <td>2013-08-09 03:00</td>
+       <td></td>
+       <td style="text-align:right;">63.03</td>
+       <td style="text-align:right;">-145.5</td>
+       <td style="text-align:right;">2669</td>
+     </tr>
+     <tr>
+       <td> AK Gustavus 2 NE</td>
+       <td>CRN</td>
+       <td>2012-07-19 01:00</td>
+       <td></td>
+       <td style="text-align:right;">58.43</td>
+       <td style="text-align:right;">-135.69</td>
+       <td style="text-align:right;">20</td>
+     </tr>
+     <tr>
+       <td> AK Ivotuk 1 NNE</td>
+       <td>CRN</td>
+       <td>2014-06-18 05:00</td>
+       <td></td>
+       <td style="text-align:right;">68.49</td>
+       <td style="text-align:right;">-155.75</td>
+       <td style="text-align:right;">1909</td>
+     </tr>
+     <tr>
+       <td> AK Kenai 29 ENE</td>
+       <td>CRN</td>
+       <td>2010-08-30 20:00</td>
+       <td></td>
+       <td style="text-align:right;">60.72</td>
+       <td style="text-align:right;">-150.45</td>
+       <td style="text-align:right;">282</td>
+     </tr>
+     <tr>
+       <td> AK King Salmon 42 SE</td>
+       <td>CRN</td>
+       <td>2012-08-15 05:00</td>
+       <td></td>
+       <td style="text-align:right;">58.21</td>
+       <td style="text-align:right;">-155.92</td>
+       <td style="text-align:right;">661</td>
+     </tr>
+     <tr>
+       <td> AK Metlakatla 6 S</td>
+       <td>CRN</td>
+       <td>2012-07-26 17:00</td>
+       <td></td>
+       <td style="text-align:right;">55.05</td>
+       <td style="text-align:right;">-131.59</td>
+       <td style="text-align:right;">105</td>
+     </tr>
+     <tr>
+       <td> AK Port Alsworth 1 SW</td>
+       <td>CRN</td>
+       <td>2009-09-25 02:00</td>
+       <td></td>
+       <td style="text-align:right;">60.2</td>
+       <td style="text-align:right;">-154.32</td>
+       <td style="text-align:right;">321</td>
+     </tr>
+     <tr>
+       <td> AK Red Dog Mine 3 SSW</td>
+       <td>CRN</td>
+       <td>2010-08-25 02:00</td>
+       <td></td>
+       <td style="text-align:right;">68.03</td>
+       <td style="text-align:right;">-162.92</td>
+       <td style="text-align:right;">942</td>
+     </tr>
+     <tr>
+       <td> AK Ruby 44 ESE</td>
+       <td>CRN</td>
+       <td>2014-08-28 01:00</td>
+       <td></td>
+       <td style="text-align:right;">64.5</td>
+       <td style="text-align:right;">-154.13</td>
+       <td style="text-align:right;">259</td>
+     </tr>
+     <tr>
+       <td> AK Sand Point 1 ENE</td>
+       <td>CRN</td>
+       <td>2009-08-20 04:00</td>
+       <td></td>
+       <td style="text-align:right;">55.35</td>
+       <td style="text-align:right;">-160.47</td>
+       <td style="text-align:right;">240</td>
+     </tr>
+     <tr>
+       <td> AK Selawik 28 E</td>
+       <td>CRN</td>
+       <td>2015-08-13 22:00</td>
+       <td></td>
+       <td style="text-align:right;">66.56</td>
+       <td style="text-align:right;">-159</td>
+       <td style="text-align:right;">22</td>
+     </tr>
+     <tr>
+       <td> AK Sitka 1 NE</td>
+       <td>CRN</td>
+       <td>2005-08-15 20:00</td>
+       <td></td>
+       <td style="text-align:right;">57.06</td>
+       <td style="text-align:right;">-135.33</td>
+       <td style="text-align:right;">78</td>
+     </tr>
+     <tr>
+       <td> AK St. Paul 4 NE</td>
+       <td>CRN</td>
+       <td>2005-08-07 23:00</td>
+       <td></td>
+       <td style="text-align:right;">57.16</td>
+       <td style="text-align:right;">-170.21</td>
+       <td style="text-align:right;">20</td>
+     </tr>
+     <tr>
+       <td> AK Tok 70 SE</td>
+       <td>CRN</td>
+       <td>2011-09-24 01:00</td>
+       <td></td>
+       <td style="text-align:right;">62.74</td>
+       <td style="text-align:right;">-141.21</td>
+       <td style="text-align:right;">2000</td>
+     </tr>
+     <tr>
+       <td> AK Toolik Lake 5 ENE</td>
+       <td>CRN</td>
+       <td>2017-08-22 02:00</td>
+       <td></td>
+       <td style="text-align:right;">68.65</td>
+       <td style="text-align:right;">-149.4</td>
+       <td style="text-align:right;">2461</td>
+     </tr>
+     <tr>
+       <td> AK Utqiaġvik formerly Barrow 4 ENE</td>
+       <td>CRN</td>
+       <td>2002-08-09 00:00</td>
+       <td></td>
+       <td style="text-align:right;">71.32</td>
+       <td style="text-align:right;">-156.61</td>
+       <td style="text-align:right;">15</td>
+     </tr>
+     <tr>
+       <td> AK Yakutat 3 SSE</td>
+       <td>CRN</td>
+       <td>2016-08-27 02:00</td>
+       <td></td>
+       <td style="text-align:right;">59.51</td>
+       <td style="text-align:right;">-139.69</td>
+       <td style="text-align:right;">26</td>
+     </tr>
+     <tr>
+       <td> AL Brewton 3 NNE</td>
+       <td>ALUSRCRN</td>
+       <td>2008-01-17 23:00</td>
+       <td></td>
+       <td style="text-align:right;">31.14</td>
+       <td style="text-align:right;">-87.05</td>
+       <td style="text-align:right;">170</td>
+     </tr>
+     <tr>
+       <td> AL Clanton 2 NE</td>
+       <td>ALUSRCRN</td>
+       <td>2007-03-14 15:00</td>
+       <td></td>
+       <td style="text-align:right;">32.85</td>
+       <td style="text-align:right;">-86.61</td>
+       <td style="text-align:right;">584</td>
+     </tr>
+     <tr>
+       <td> AL Courtland 2 WSW</td>
+       <td>ALUSRCRN</td>
+       <td>2006-05-04 19:00</td>
+       <td></td>
+       <td style="text-align:right;">34.66</td>
+       <td style="text-align:right;">-87.35</td>
+       <td style="text-align:right;">575</td>
+     </tr>
+     <tr>
+       <td> AL Cullman 3 ENE</td>
+       <td>ALUSRCRN</td>
+       <td>2006-05-04 17:00</td>
+       <td></td>
+       <td style="text-align:right;">34.2</td>
+       <td style="text-align:right;">-86.8</td>
+       <td style="text-align:right;">800</td>
+     </tr>
+     <tr>
+       <td> AL Fairhope 3 NE</td>
+       <td>CRN</td>
+       <td>2006-07-13 22:00</td>
+       <td></td>
+       <td style="text-align:right;">30.55</td>
+       <td style="text-align:right;">-87.88</td>
+       <td style="text-align:right;">95</td>
+     </tr>
+     <tr>
+       <td> AL Gadsden 19 N</td>
+       <td>CRN</td>
+       <td>2005-04-14 17:00</td>
+       <td></td>
+       <td style="text-align:right;">34.29</td>
+       <td style="text-align:right;">-85.96</td>
+       <td style="text-align:right;">1152</td>
+     </tr>
+     <tr>
+       <td> AL Gainesville 2 NE</td>
+       <td>ALUSRCRN</td>
+       <td>2007-03-16 18:00</td>
+       <td></td>
+       <td style="text-align:right;">32.84</td>
+       <td style="text-align:right;">-88.14</td>
+       <td style="text-align:right;">107</td>
+     </tr>
+     <tr>
+       <td> AL Greensboro 2 WNW</td>
+       <td>ALUSRCRN</td>
+       <td>2007-03-16 00:00</td>
+       <td></td>
+       <td style="text-align:right;">32.72</td>
+       <td style="text-align:right;">-87.62</td>
+       <td style="text-align:right;">280</td>
+     </tr>
+     <tr>
+       <td> AL Guntersville 2 SW</td>
+       <td>ALUSRCRN</td>
+       <td>2006-05-04 22:00</td>
+       <td>2013-12-16 18:00</td>
+       <td style="text-align:right;">34.33</td>
+       <td style="text-align:right;">-86.32</td>
+       <td style="text-align:right;">620</td>
+     </tr>
+     <tr>
+       <td> AL Highland Home 2 S</td>
+       <td>ALUSRCRN</td>
+       <td>2008-12-02 19:00</td>
+       <td></td>
+       <td style="text-align:right;">31.92</td>
+       <td style="text-align:right;">-86.31</td>
+       <td style="text-align:right;">614</td>
+     </tr>
+     <tr>
+       <td> AL Muscle Shoals 2 N</td>
+       <td>ALUSRCRN</td>
+       <td>2007-04-25 19:00</td>
+       <td></td>
+       <td style="text-align:right;">34.77</td>
+       <td style="text-align:right;">-87.64</td>
+       <td style="text-align:right;">530</td>
+     </tr>
+     <tr>
+       <td> AL Northport 2 S</td>
+       <td>ALUSRCRN</td>
+       <td>2009-05-21 03:00</td>
+       <td></td>
+       <td style="text-align:right;">33.21</td>
+       <td style="text-align:right;">-87.59</td>
+       <td style="text-align:right;">150</td>
+     </tr>
+     <tr>
+       <td> AL Russellville 4 SSE</td>
+       <td>ALUSRCRN</td>
+       <td>2006-08-16 19:00</td>
+       <td></td>
+       <td style="text-align:right;">34.45</td>
+       <td style="text-align:right;">-87.71</td>
+       <td style="text-align:right;">720</td>
+     </tr>
+     <tr>
+       <td> AL Scottsboro 2 NE</td>
+       <td>ALUSRCRN</td>
+       <td>2006-08-16 12:00</td>
+       <td></td>
+       <td style="text-align:right;">34.69</td>
+       <td style="text-align:right;">-86</td>
+       <td style="text-align:right;">636</td>
+     </tr>
+     <tr>
+       <td> AL Selma 13 WNW</td>
+       <td>CRN</td>
+       <td>2005-05-26 13:00</td>
+       <td></td>
+       <td style="text-align:right;">32.46</td>
+       <td style="text-align:right;">-87.24</td>
+       <td style="text-align:right;">193</td>
+     </tr>
+     <tr>
+       <td> AL Selma 6 SSE</td>
+       <td>ALUSRCRN</td>
+       <td>2007-03-15 01:00</td>
+       <td></td>
+       <td style="text-align:right;">32.33</td>
+       <td style="text-align:right;">-86.98</td>
+       <td style="text-align:right;">157</td>
+     </tr>
+     <tr>
+       <td> AL Talladega 10 NNE</td>
+       <td>ALUSRCRN</td>
+       <td>2008-12-03 18:00</td>
+       <td></td>
+       <td style="text-align:right;">33.57</td>
+       <td style="text-align:right;">-86.06</td>
+       <td style="text-align:right;">525</td>
+     </tr>
+     <tr>
+       <td> AL Thomasville 2 S</td>
+       <td>ALUSRCRN</td>
+       <td>2008-01-18 22:00</td>
+       <td></td>
+       <td style="text-align:right;">31.88</td>
+       <td style="text-align:right;">-87.74</td>
+       <td style="text-align:right;">350</td>
+     </tr>
+     <tr>
+       <td> AL Troy 2 W</td>
+       <td>ALUSRCRN</td>
+       <td>2008-01-16 00:00</td>
+       <td></td>
+       <td style="text-align:right;">31.79</td>
+       <td style="text-align:right;">-86</td>
+       <td style="text-align:right;">472</td>
+     </tr>
+     <tr>
+       <td> AL Valley Head 1 SSW</td>
+       <td>ALUSRCRN</td>
+       <td>2006-05-04 13:00</td>
+       <td></td>
+       <td style="text-align:right;">34.57</td>
+       <td style="text-align:right;">-85.62</td>
+       <td style="text-align:right;">1020</td>
+     </tr>
+     <tr>
+       <td> AR Batesville 8 WNW</td>
+       <td>CRN</td>
+       <td>2006-12-19 21:00</td>
+       <td></td>
+       <td style="text-align:right;">35.82</td>
+       <td style="text-align:right;">-91.78</td>
+       <td style="text-align:right;">455</td>
+     </tr>
+     <tr>
+       <td> AZ Ajo 29 S</td>
+       <td>USRCRN</td>
+       <td>2010-09-27 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">31.95</td>
+       <td style="text-align:right;">-112.8</td>
+       <td style="text-align:right;">1661</td>
+     </tr>
+     <tr>
+       <td> AZ Amado 23 W</td>
+       <td>USRCRN</td>
+       <td>2010-09-26 19:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">31.69</td>
+       <td style="text-align:right;">-111.45</td>
+       <td style="text-align:right;">3300</td>
+     </tr>
+     <tr>
+       <td> AZ Bowie 23 SSE</td>
+       <td>USRCRN</td>
+       <td>2010-02-26 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">32.01</td>
+       <td style="text-align:right;">-109.39</td>
+       <td style="text-align:right;">5133</td>
+     </tr>
+     <tr>
+       <td> AZ Cameron 25 SSE</td>
+       <td>USRCRN</td>
+       <td>2009-12-15 22:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">35.5</td>
+       <td style="text-align:right;">-111.34</td>
+       <td style="text-align:right;">4807</td>
+     </tr>
+     <tr>
+       <td> AZ Camp Verde 3 N</td>
+       <td>USRCRN</td>
+       <td>2010-03-03 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.61</td>
+       <td style="text-align:right;">-111.84</td>
+       <td style="text-align:right;">3434</td>
+     </tr>
+     <tr>
+       <td> AZ Coolidge 5 W</td>
+       <td>USRCRN</td>
+       <td>2010-02-27 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">32.99</td>
+       <td style="text-align:right;">-111.53</td>
+       <td style="text-align:right;">1425</td>
+     </tr>
+     <tr>
+       <td> AZ Elgin 5 S</td>
+       <td>CRN</td>
+       <td>2002-09-15 01:00</td>
+       <td></td>
+       <td style="text-align:right;">31.59</td>
+       <td style="text-align:right;">-110.51</td>
+       <td style="text-align:right;">4811</td>
+     </tr>
+     <tr>
+       <td> AZ Fredonia 7 SSE</td>
+       <td>USRCRN</td>
+       <td>2011-09-25 18:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.86</td>
+       <td style="text-align:right;">-112.45</td>
+       <td style="text-align:right;">5147</td>
+     </tr>
+     <tr>
+       <td> AZ Gila Bend 3 ENE</td>
+       <td>USRCRN</td>
+       <td>2010-09-24 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">32.96</td>
+       <td style="text-align:right;">-112.67</td>
+       <td style="text-align:right;">780</td>
+     </tr>
+     <tr>
+       <td> AZ Heber 3 SE</td>
+       <td>USRCRN</td>
+       <td>2009-12-17 15:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.4</td>
+       <td style="text-align:right;">-110.57</td>
+       <td style="text-align:right;">6625</td>
+     </tr>
+     <tr>
+       <td> AZ Holbrook 17 ESE</td>
+       <td>USRCRN</td>
+       <td>2009-07-11 20:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.82</td>
+       <td style="text-align:right;">-109.89</td>
+       <td style="text-align:right;">5613</td>
+     </tr>
+     <tr>
+       <td> AZ Kayenta 16 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-08-19 02:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.68</td>
+       <td style="text-align:right;">-110.54</td>
+       <td style="text-align:right;">7274</td>
+     </tr>
+     <tr>
+       <td> AZ Kingman 8 NE</td>
+       <td>USRCRN</td>
+       <td>2011-09-27 18:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">35.26</td>
+       <td style="text-align:right;">-113.93</td>
+       <td style="text-align:right;">3425</td>
+     </tr>
+     <tr>
+       <td> AZ Lake Havasu City 19 SE</td>
+       <td>USRCRN</td>
+       <td>2010-09-23 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.25</td>
+       <td style="text-align:right;">-114.13</td>
+       <td style="text-align:right;">416</td>
+     </tr>
+     <tr>
+       <td> AZ Meadview 7 N</td>
+       <td>USRCRN</td>
+       <td>2011-09-28 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.09</td>
+       <td style="text-align:right;">-114.05</td>
+       <td style="text-align:right;">2938</td>
+     </tr>
+     <tr>
+       <td> AZ Page 9 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-08-03 15:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.86</td>
+       <td style="text-align:right;">-111.6</td>
+       <td style="text-align:right;">3254</td>
+     </tr>
+     <tr>
+       <td> AZ Phoenix 7 S</td>
+       <td>USRCRN</td>
+       <td>2010-03-01 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.35</td>
+       <td style="text-align:right;">-112.08</td>
+       <td style="text-align:right;">1404</td>
+     </tr>
+     <tr>
+       <td> AZ Safford 5 NNE</td>
+       <td>USRCRN</td>
+       <td>2011-06-23 17:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">32.86</td>
+       <td style="text-align:right;">-109.63</td>
+       <td style="text-align:right;">3176</td>
+     </tr>
+     <tr>
+       <td> AZ Tsaile 1 SSW</td>
+       <td>USRCRN</td>
+       <td>2010-08-18 00:00</td>
+       <td>2013-06-24 17:00</td>
+       <td style="text-align:right;">36.29</td>
+       <td style="text-align:right;">-109.22</td>
+       <td style="text-align:right;">7071</td>
+     </tr>
+     <tr>
+       <td> AZ Tucson 11 W</td>
+       <td>CRN</td>
+       <td>2002-09-18 05:00</td>
+       <td></td>
+       <td style="text-align:right;">32.24</td>
+       <td style="text-align:right;">-111.17</td>
+       <td style="text-align:right;">2733</td>
+     </tr>
+     <tr>
+       <td> AZ Whiteriver A 1 SW</td>
+       <td>USRCRN</td>
+       <td>2011-06-22 19:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.82</td>
+       <td style="text-align:right;">-109.98</td>
+       <td style="text-align:right;">5173</td>
+     </tr>
+     <tr>
+       <td> AZ Williams 35 NNW</td>
+       <td>CRN</td>
+       <td>2008-06-26 02:00</td>
+       <td></td>
+       <td style="text-align:right;">35.76</td>
+       <td style="text-align:right;">-112.34</td>
+       <td style="text-align:right;">5990</td>
+     </tr>
+     <tr>
+       <td> AZ Yuma 27 ENE</td>
+       <td>CRN</td>
+       <td>2008-03-19 19:00</td>
+       <td></td>
+       <td style="text-align:right;">32.84</td>
+       <td style="text-align:right;">-114.19</td>
+       <td style="text-align:right;">620</td>
+     </tr>
+     <tr>
+       <td> CA Bodega 6 WSW</td>
+       <td>CRN</td>
+       <td>2008-06-14 21:00</td>
+       <td></td>
+       <td style="text-align:right;">38.32</td>
+       <td style="text-align:right;">-123.07</td>
+       <td style="text-align:right;">63</td>
+     </tr>
+     <tr>
+       <td> CA Fallbrook 5 NE</td>
+       <td>CRN</td>
+       <td>2008-04-30 18:00</td>
+       <td></td>
+       <td style="text-align:right;">33.44</td>
+       <td style="text-align:right;">-117.19</td>
+       <td style="text-align:right;">1140</td>
+     </tr>
+     <tr>
+       <td> CA Merced 23 WSW</td>
+       <td>CRN</td>
+       <td>2004-03-25 01:00</td>
+       <td></td>
+       <td style="text-align:right;">37.24</td>
+       <td style="text-align:right;">-120.88</td>
+       <td style="text-align:right;">78</td>
+     </tr>
+     <tr>
+       <td> CA Redding 12 WNW</td>
+       <td>CRN</td>
+       <td>2003-03-26 22:00</td>
+       <td></td>
+       <td style="text-align:right;">40.65</td>
+       <td style="text-align:right;">-122.61</td>
+       <td style="text-align:right;">1418</td>
+     </tr>
+     <tr>
+       <td> CA Santa Barbara 11 W</td>
+       <td>CRN</td>
+       <td>2008-08-14 01:00</td>
+       <td></td>
+       <td style="text-align:right;">34.41</td>
+       <td style="text-align:right;">-119.88</td>
+       <td style="text-align:right;">18</td>
+     </tr>
+     <tr>
+       <td> CA Stovepipe Wells 1 SW</td>
+       <td>CRN</td>
+       <td>2004-05-04 23:00</td>
+       <td></td>
+       <td style="text-align:right;">36.6</td>
+       <td style="text-align:right;">-117.14</td>
+       <td style="text-align:right;">84</td>
+     </tr>
+     <tr>
+       <td> CA Yosemite Village 12 W</td>
+       <td>CRN</td>
+       <td>2007-09-28 20:00</td>
+       <td></td>
+       <td style="text-align:right;">37.76</td>
+       <td style="text-align:right;">-119.82</td>
+       <td style="text-align:right;">6620</td>
+     </tr>
+     <tr>
+       <td> CO Akron A 4 E</td>
+       <td>USRCRN</td>
+       <td>2009-06-15 18:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.16</td>
+       <td style="text-align:right;">-103.14</td>
+       <td style="text-align:right;">4542</td>
+     </tr>
+     <tr>
+       <td> CO Boulder 14 W</td>
+       <td>CRN</td>
+       <td>2003-09-27 20:00</td>
+       <td></td>
+       <td style="text-align:right;">40.04</td>
+       <td style="text-align:right;">-105.54</td>
+       <td style="text-align:right;">9828</td>
+     </tr>
+     <tr>
+       <td> CO Buena Vista 2 SSE</td>
+       <td>USRCRN</td>
+       <td>2010-07-17 02:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.81</td>
+       <td style="text-align:right;">-106.12</td>
+       <td style="text-align:right;">7933</td>
+     </tr>
+     <tr>
+       <td> CO Center A 4 SSW</td>
+       <td>USRCRN</td>
+       <td>2009-11-02 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.71</td>
+       <td style="text-align:right;">-106.14</td>
+       <td style="text-align:right;">7678</td>
+     </tr>
+     <tr>
+       <td> CO Colorado Springs 23 NW</td>
+       <td>USRCRN</td>
+       <td>2010-06-30 18:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.09</td>
+       <td style="text-align:right;">-105.09</td>
+       <td style="text-align:right;">7872</td>
+     </tr>
+     <tr>
+       <td> CO Cortez 8 SE</td>
+       <td>CRN</td>
+       <td>2005-11-02 23:00</td>
+       <td></td>
+       <td style="text-align:right;">37.26</td>
+       <td style="text-align:right;">-108.5</td>
+       <td style="text-align:right;">8034</td>
+     </tr>
+     <tr>
+       <td> CO Craig 30 N</td>
+       <td>USRCRN</td>
+       <td>2010-07-21 19:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.95</td>
+       <td style="text-align:right;">-107.61</td>
+       <td style="text-align:right;">6518</td>
+     </tr>
+     <tr>
+       <td> CO Dinosaur 2 E</td>
+       <td>CRN</td>
+       <td>2004-07-21 15:00</td>
+       <td></td>
+       <td style="text-align:right;">40.24</td>
+       <td style="text-align:right;">-108.97</td>
+       <td style="text-align:right;">6062</td>
+     </tr>
+     <tr>
+       <td> CO Eads 16 ENE</td>
+       <td>USRCRN</td>
+       <td>2009-06-19 22:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.54</td>
+       <td style="text-align:right;">-102.5</td>
+       <td style="text-align:right;">3967</td>
+     </tr>
+     <tr>
+       <td> CO Eagle 13 SSE</td>
+       <td>USRCRN</td>
+       <td>2010-07-18 01:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.48</td>
+       <td style="text-align:right;">-106.73</td>
+       <td style="text-align:right;">8605</td>
+     </tr>
+     <tr>
+       <td> CO Genoa 35 N</td>
+       <td>USRCRN</td>
+       <td>2010-07-01 02:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.79</td>
+       <td style="text-align:right;">-103.52</td>
+       <td style="text-align:right;">4764</td>
+     </tr>
+     <tr>
+       <td> CO Grand Junction 9 W</td>
+       <td>USRCRN</td>
+       <td>2009-06-16 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.1</td>
+       <td style="text-align:right;">-108.74</td>
+       <td style="text-align:right;">5806</td>
+     </tr>
+     <tr>
+       <td> CO Kim 9 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-05-15 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.22</td>
+       <td style="text-align:right;">-103.5</td>
+       <td style="text-align:right;">5870</td>
+     </tr>
+     <tr>
+       <td> CO La Junta 17 WSW</td>
+       <td>CRN</td>
+       <td>2004-08-03 20:00</td>
+       <td></td>
+       <td style="text-align:right;">37.86</td>
+       <td style="text-align:right;">-103.82</td>
+       <td style="text-align:right;">4386</td>
+     </tr>
+     <tr>
+       <td> CO Meeker 15 W</td>
+       <td>USRCRN</td>
+       <td>2010-07-19 22:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.08</td>
+       <td style="text-align:right;">-108.2</td>
+       <td style="text-align:right;">5761</td>
+     </tr>
+     <tr>
+       <td> CO Montrose 11 ENE</td>
+       <td>CRN</td>
+       <td>2004-07-25 14:00</td>
+       <td></td>
+       <td style="text-align:right;">38.54</td>
+       <td style="text-align:right;">-107.69</td>
+       <td style="text-align:right;">8402</td>
+     </tr>
+     <tr>
+       <td> CO Nunn 7 NNE</td>
+       <td>CRN</td>
+       <td>2003-07-06 22:00</td>
+       <td></td>
+       <td style="text-align:right;">40.81</td>
+       <td style="text-align:right;">-104.76</td>
+       <td style="text-align:right;">5390</td>
+     </tr>
+     <tr>
+       <td> CO Rifle 23 NW</td>
+       <td>USRCRN</td>
+       <td>2010-07-20 19:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.76</td>
+       <td style="text-align:right;">-108.13</td>
+       <td style="text-align:right;">7550</td>
+     </tr>
+     <tr>
+       <td> CO Rocky Ford 1 ESE</td>
+       <td>USRCRN</td>
+       <td>2009-11-01 02:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.04</td>
+       <td style="text-align:right;">-103.69</td>
+       <td style="text-align:right;">4170</td>
+     </tr>
+     <tr>
+       <td> CO Saguache 2 WNW</td>
+       <td>USRCRN</td>
+       <td>2009-06-18 18:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.1</td>
+       <td style="text-align:right;">-106.17</td>
+       <td style="text-align:right;">7823</td>
+     </tr>
+     <tr>
+       <td> CO Springfield 6 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-05-17 16:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.38</td>
+       <td style="text-align:right;">-102.72</td>
+       <td style="text-align:right;">4557</td>
+     </tr>
+     <tr>
+       <td> CO Stratton 24 N</td>
+       <td>USRCRN</td>
+       <td>2009-06-14 01:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.66</td>
+       <td style="text-align:right;">-102.62</td>
+       <td style="text-align:right;">4212</td>
+     </tr>
+     <tr>
+       <td> CO Woodland Park 14 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-06-29 01:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.91</td>
+       <td style="text-align:right;">-105.27</td>
+       <td style="text-align:right;">8535</td>
+     </tr>
+     <tr>
+       <td> FL Everglades City 5 NE</td>
+       <td>CRN</td>
+       <td>2007-02-10 21:00</td>
+       <td></td>
+       <td style="text-align:right;">25.9</td>
+       <td style="text-align:right;">-81.32</td>
+       <td style="text-align:right;">4</td>
+     </tr>
+     <tr>
+       <td> FL Sebring 23 SSE</td>
+       <td>CRN</td>
+       <td>2007-12-08 22:00</td>
+       <td></td>
+       <td style="text-align:right;">27.15</td>
+       <td style="text-align:right;">-81.37</td>
+       <td style="text-align:right;">150</td>
+     </tr>
+     <tr>
+       <td> FL Titusville 7 E</td>
+       <td>CRN</td>
+       <td>2005-05-06 20:00</td>
+       <td></td>
+       <td style="text-align:right;">28.62</td>
+       <td style="text-align:right;">-80.69</td>
+       <td style="text-align:right;">3</td>
+     </tr>
+     <tr>
+       <td> GA Brunswick 23 S</td>
+       <td>CRN</td>
+       <td>2004-12-16 00:00</td>
+       <td></td>
+       <td style="text-align:right;">30.81</td>
+       <td style="text-align:right;">-81.46</td>
+       <td style="text-align:right;">25</td>
+     </tr>
+     <tr>
+       <td> GA Newton 11 SW</td>
+       <td>CRN</td>
+       <td>2002-08-27 16:00</td>
+       <td></td>
+       <td style="text-align:right;">31.19</td>
+       <td style="text-align:right;">-84.45</td>
+       <td style="text-align:right;">156</td>
+     </tr>
+     <tr>
+       <td> GA Newton 8 W</td>
+       <td>CRN</td>
+       <td>2002-08-27 10:00</td>
+       <td></td>
+       <td style="text-align:right;">31.31</td>
+       <td style="text-align:right;">-84.47</td>
+       <td style="text-align:right;">176</td>
+     </tr>
+     <tr>
+       <td> GA Watkinsville 5 SSE</td>
+       <td>CRN</td>
+       <td>2004-04-30 18:00</td>
+       <td></td>
+       <td style="text-align:right;">33.78</td>
+       <td style="text-align:right;">-83.39</td>
+       <td style="text-align:right;">741</td>
+     </tr>
+     <tr>
+       <td> HI Hilo 5 S</td>
+       <td>CRN</td>
+       <td>2005-09-27 06:00</td>
+       <td></td>
+       <td style="text-align:right;">19.65</td>
+       <td style="text-align:right;">-155.08</td>
+       <td style="text-align:right;">622</td>
+     </tr>
+     <tr>
+       <td> HI Mauna Loa 5 NNE</td>
+       <td>CRN</td>
+       <td>2005-09-27 05:00</td>
+       <td></td>
+       <td style="text-align:right;">19.54</td>
+       <td style="text-align:right;">-155.58</td>
+       <td style="text-align:right;">11179</td>
+     </tr>
+     <tr>
+       <td> IA Des Moines 17 E</td>
+       <td>CRN</td>
+       <td>2004-09-15 20:00</td>
+       <td></td>
+       <td style="text-align:right;">41.56</td>
+       <td style="text-align:right;">-93.29</td>
+       <td style="text-align:right;">921</td>
+     </tr>
+     <tr>
+       <td> ID Arco 17 SW</td>
+       <td>CRN</td>
+       <td>2003-07-10 23:00</td>
+       <td></td>
+       <td style="text-align:right;">43.46</td>
+       <td style="text-align:right;">-113.56</td>
+       <td style="text-align:right;">5920</td>
+     </tr>
+     <tr>
+       <td> ID Murphy 10 W</td>
+       <td>CRN</td>
+       <td>2003-06-29 18:00</td>
+       <td></td>
+       <td style="text-align:right;">43.2</td>
+       <td style="text-align:right;">-116.75</td>
+       <td style="text-align:right;">3950</td>
+     </tr>
+     <tr>
+       <td> IL Champaign 9 SW</td>
+       <td>CRN</td>
+       <td>2002-12-20 16:00</td>
+       <td></td>
+       <td style="text-align:right;">40.05</td>
+       <td style="text-align:right;">-88.37</td>
+       <td style="text-align:right;">700</td>
+     </tr>
+     <tr>
+       <td> IL Shabbona 5 NNE</td>
+       <td>CRN</td>
+       <td>2003-08-16 18:00</td>
+       <td></td>
+       <td style="text-align:right;">41.84</td>
+       <td style="text-align:right;">-88.85</td>
+       <td style="text-align:right;">861</td>
+     </tr>
+     <tr>
+       <td> IN Bedford 5 WNW</td>
+       <td>CRN</td>
+       <td>2007-10-03 22:00</td>
+       <td></td>
+       <td style="text-align:right;">38.89</td>
+       <td style="text-align:right;">-86.57</td>
+       <td style="text-align:right;">760</td>
+     </tr>
+     <tr>
+       <td> KS Manhattan 6 SSW</td>
+       <td>CRN</td>
+       <td>2003-10-01 04:00</td>
+       <td></td>
+       <td style="text-align:right;">39.1</td>
+       <td style="text-align:right;">-96.61</td>
+       <td style="text-align:right;">1137</td>
+     </tr>
+     <tr>
+       <td> KS Oakley 19 SSW</td>
+       <td>CRN</td>
+       <td>2005-10-30 16:00</td>
+       <td></td>
+       <td style="text-align:right;">38.87</td>
+       <td style="text-align:right;">-100.96</td>
+       <td style="text-align:right;">2870</td>
+     </tr>
+     <tr>
+       <td> KY Bowling Green 21 NNE</td>
+       <td>CRN</td>
+       <td>2004-05-19 19:00</td>
+       <td></td>
+       <td style="text-align:right;">37.25</td>
+       <td style="text-align:right;">-86.23</td>
+       <td style="text-align:right;">790</td>
+     </tr>
+     <tr>
+       <td> KY Versailles 3 NNW</td>
+       <td>CRN</td>
+       <td>2003-06-12 00:00</td>
+       <td></td>
+       <td style="text-align:right;">38.09</td>
+       <td style="text-align:right;">-84.75</td>
+       <td style="text-align:right;">891</td>
+     </tr>
+     <tr>
+       <td> LA Lafayette 13 SE</td>
+       <td>CRN</td>
+       <td>2003-01-11 18:00</td>
+       <td></td>
+       <td style="text-align:right;">30.09</td>
+       <td style="text-align:right;">-91.87</td>
+       <td style="text-align:right;">35</td>
+     </tr>
+     <tr>
+       <td> LA Monroe 26 N</td>
+       <td>CRN</td>
+       <td>2003-01-15 20:00</td>
+       <td></td>
+       <td style="text-align:right;">32.88</td>
+       <td style="text-align:right;">-92.12</td>
+       <td style="text-align:right;">88</td>
+     </tr>
+     <tr>
+       <td> ME Limestone 4 NNW</td>
+       <td>CRN</td>
+       <td>2002-09-20 12:00</td>
+       <td></td>
+       <td style="text-align:right;">46.96</td>
+       <td style="text-align:right;">-67.88</td>
+       <td style="text-align:right;">737</td>
+     </tr>
+     <tr>
+       <td> ME Old Town 2 W</td>
+       <td>CRN</td>
+       <td>2002-09-13 23:00</td>
+       <td></td>
+       <td style="text-align:right;">44.93</td>
+       <td style="text-align:right;">-68.7</td>
+       <td style="text-align:right;">127</td>
+     </tr>
+     <tr>
+       <td> MI Chatham 1 SE</td>
+       <td>CRN</td>
+       <td>2004-11-10 14:00</td>
+       <td></td>
+       <td style="text-align:right;">46.33</td>
+       <td style="text-align:right;">-86.92</td>
+       <td style="text-align:right;">875</td>
+     </tr>
+     <tr>
+       <td> MI Gaylord 9 SSW</td>
+       <td>CRN</td>
+       <td>2007-09-19 23:00</td>
+       <td></td>
+       <td style="text-align:right;">44.91</td>
+       <td style="text-align:right;">-84.72</td>
+       <td style="text-align:right;">1461</td>
+     </tr>
+     <tr>
+       <td> MN Goodridge 12 NNW</td>
+       <td>CRN</td>
+       <td>2003-08-20 20:00</td>
+       <td></td>
+       <td style="text-align:right;">48.31</td>
+       <td style="text-align:right;">-95.87</td>
+       <td style="text-align:right;">1150</td>
+     </tr>
+     <tr>
+       <td> MN Sandstone 6 W</td>
+       <td>CRN</td>
+       <td>2007-06-22 20:00</td>
+       <td></td>
+       <td style="text-align:right;">46.11</td>
+       <td style="text-align:right;">-92.99</td>
+       <td style="text-align:right;">1130</td>
+     </tr>
+     <tr>
+       <td> MO Chillicothe 22 ENE</td>
+       <td>CRN</td>
+       <td>2005-06-11 17:00</td>
+       <td></td>
+       <td style="text-align:right;">39.87</td>
+       <td style="text-align:right;">-93.15</td>
+       <td style="text-align:right;">833</td>
+     </tr>
+     <tr>
+       <td> MO Joplin 24 N</td>
+       <td>CRN</td>
+       <td>2007-05-25 15:00</td>
+       <td></td>
+       <td style="text-align:right;">37.43</td>
+       <td style="text-align:right;">-94.58</td>
+       <td style="text-align:right;">952</td>
+     </tr>
+     <tr>
+       <td> MO Salem 10 W</td>
+       <td>CRN</td>
+       <td>2007-05-17 14:00</td>
+       <td></td>
+       <td style="text-align:right;">37.63</td>
+       <td style="text-align:right;">-91.72</td>
+       <td style="text-align:right;">1198</td>
+     </tr>
+     <tr>
+       <td> MS Holly Springs 4 N</td>
+       <td>CRN</td>
+       <td>2008-02-02 00:00</td>
+       <td></td>
+       <td style="text-align:right;">34.82</td>
+       <td style="text-align:right;">-89.43</td>
+       <td style="text-align:right;">484</td>
+     </tr>
+     <tr>
+       <td> MS Newton 5 ENE</td>
+       <td>CRN</td>
+       <td>2002-11-03 09:00</td>
+       <td></td>
+       <td style="text-align:right;">32.34</td>
+       <td style="text-align:right;">-89.07</td>
+       <td style="text-align:right;">374</td>
+     </tr>
+     <tr>
+       <td> MT Dillon 18 WSW</td>
+       <td>CRN</td>
+       <td>2007-07-29 00:00</td>
+       <td></td>
+       <td style="text-align:right;">45.16</td>
+       <td style="text-align:right;">-113.01</td>
+       <td style="text-align:right;">5971</td>
+     </tr>
+     <tr>
+       <td> MT Lewistown 42 WSW</td>
+       <td>CRN</td>
+       <td>2008-07-27 15:00</td>
+       <td></td>
+       <td style="text-align:right;">46.88</td>
+       <td style="text-align:right;">-110.29</td>
+       <td style="text-align:right;">5070</td>
+     </tr>
+     <tr>
+       <td> MT St. Mary 1 SSW</td>
+       <td>CRN</td>
+       <td>2003-09-25 02:00</td>
+       <td></td>
+       <td style="text-align:right;">48.74</td>
+       <td style="text-align:right;">-113.43</td>
+       <td style="text-align:right;">4555</td>
+     </tr>
+     <tr>
+       <td> MT Wolf Point 29 ENE</td>
+       <td>CRN</td>
+       <td>2001-12-20 13:00</td>
+       <td></td>
+       <td style="text-align:right;">48.31</td>
+       <td style="text-align:right;">-105.1</td>
+       <td style="text-align:right;">2085</td>
+     </tr>
+     <tr>
+       <td> MT Wolf Point 34 NE</td>
+       <td>CRN</td>
+       <td>2001-12-20 13:00</td>
+       <td></td>
+       <td style="text-align:right;">48.49</td>
+       <td style="text-align:right;">-105.21</td>
+       <td style="text-align:right;">2643</td>
+     </tr>
+     <tr>
+       <td> NC Asheville 13 S</td>
+       <td>CRN</td>
+       <td>2000-11-15 05:00</td>
+       <td></td>
+       <td style="text-align:right;">35.42</td>
+       <td style="text-align:right;">-82.56</td>
+       <td style="text-align:right;">2103</td>
+     </tr>
+     <tr>
+       <td> NC Asheville 8 SSW</td>
+       <td>CRN</td>
+       <td>2000-11-15 05:00</td>
+       <td></td>
+       <td style="text-align:right;">35.49</td>
+       <td style="text-align:right;">-82.61</td>
+       <td style="text-align:right;">2151</td>
+     </tr>
+     <tr>
+       <td> NC Durham 11 W</td>
+       <td>CRN</td>
+       <td>2007-03-29 13:00</td>
+       <td></td>
+       <td style="text-align:right;">35.97</td>
+       <td style="text-align:right;">-79.09</td>
+       <td style="text-align:right;">562</td>
+     </tr>
+     <tr>
+       <td> ND Jamestown 38 WSW</td>
+       <td>CRN</td>
+       <td>2008-07-30 00:00</td>
+       <td></td>
+       <td style="text-align:right;">46.77</td>
+       <td style="text-align:right;">-99.48</td>
+       <td style="text-align:right;">1920</td>
+     </tr>
+     <tr>
+       <td> ND Medora 7 E</td>
+       <td>CRN</td>
+       <td>2004-09-18 15:00</td>
+       <td></td>
+       <td style="text-align:right;">46.89</td>
+       <td style="text-align:right;">-103.38</td>
+       <td style="text-align:right;">2771</td>
+     </tr>
+     <tr>
+       <td> ND Northgate 5 ESE</td>
+       <td>CRN</td>
+       <td>2006-10-17 23:00</td>
+       <td></td>
+       <td style="text-align:right;">48.97</td>
+       <td style="text-align:right;">-102.17</td>
+       <td style="text-align:right;">1842</td>
+     </tr>
+     <tr>
+       <td> NE Harrison 20 SSE</td>
+       <td>CRN</td>
+       <td>2003-08-27 17:00</td>
+       <td></td>
+       <td style="text-align:right;">42.42</td>
+       <td style="text-align:right;">-103.74</td>
+       <td style="text-align:right;">4406</td>
+     </tr>
+     <tr>
+       <td> NE Lincoln 11 SW</td>
+       <td>CRN</td>
+       <td>2002-01-14 19:00</td>
+       <td></td>
+       <td style="text-align:right;">40.7</td>
+       <td style="text-align:right;">-96.85</td>
+       <td style="text-align:right;">1372</td>
+     </tr>
+     <tr>
+       <td> NE Lincoln 8 ENE</td>
+       <td>CRN</td>
+       <td>2002-01-15 05:00</td>
+       <td></td>
+       <td style="text-align:right;">40.85</td>
+       <td style="text-align:right;">-96.57</td>
+       <td style="text-align:right;">1189</td>
+     </tr>
+     <tr>
+       <td> NE Whitman 5 ENE</td>
+       <td>CRN</td>
+       <td>2004-09-12 01:00</td>
+       <td></td>
+       <td style="text-align:right;">42.07</td>
+       <td style="text-align:right;">-101.45</td>
+       <td style="text-align:right;">3740</td>
+     </tr>
+     <tr>
+       <td> NH Durham 2 N</td>
+       <td>CRN</td>
+       <td>2001-12-16 22:00</td>
+       <td></td>
+       <td style="text-align:right;">43.17</td>
+       <td style="text-align:right;">-70.93</td>
+       <td style="text-align:right;">119</td>
+     </tr>
+     <tr>
+       <td> NH Durham 2 SSW</td>
+       <td>CRN</td>
+       <td>2001-12-16 22:00</td>
+       <td></td>
+       <td style="text-align:right;">43.11</td>
+       <td style="text-align:right;">-70.95</td>
+       <td style="text-align:right;">63</td>
+     </tr>
+     <tr>
+       <td> NM Artesia 2 WNW</td>
+       <td>USRCRN</td>
+       <td>2010-06-24 16:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">32.85</td>
+       <td style="text-align:right;">-104.46</td>
+       <td style="text-align:right;">3501</td>
+     </tr>
+     <tr>
+       <td> NM Aztec 43 E</td>
+       <td>USRCRN</td>
+       <td>2010-08-31 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.75</td>
+       <td style="text-align:right;">-107.22</td>
+       <td style="text-align:right;">7024</td>
+     </tr>
+     <tr>
+       <td> NM Carrizozo 1 W</td>
+       <td>USRCRN</td>
+       <td>2009-07-09 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.65</td>
+       <td style="text-align:right;">-105.89</td>
+       <td style="text-align:right;">5366</td>
+     </tr>
+     <tr>
+       <td> NM Clayton 3 ENE</td>
+       <td>USRCRN</td>
+       <td>2010-05-11 19:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.47</td>
+       <td style="text-align:right;">-103.12</td>
+       <td style="text-align:right;">4885</td>
+     </tr>
+     <tr>
+       <td> NM Clovis 7 N</td>
+       <td>USRCRN</td>
+       <td>2009-12-13 02:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.51</td>
+       <td style="text-align:right;">-103.17</td>
+       <td style="text-align:right;">4316</td>
+     </tr>
+     <tr>
+       <td> NM Elida 14 SW</td>
+       <td>USRCRN</td>
+       <td>2011-06-19 19:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.81</td>
+       <td style="text-align:right;">-103.84</td>
+       <td style="text-align:right;">4313</td>
+     </tr>
+     <tr>
+       <td> NM Grants 2 S</td>
+       <td>USRCRN</td>
+       <td>2010-08-29 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">35.12</td>
+       <td style="text-align:right;">-107.83</td>
+       <td style="text-align:right;">6443</td>
+     </tr>
+     <tr>
+       <td> NM Hachita 7 ESE</td>
+       <td>USRCRN</td>
+       <td>2011-09-30 20:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">31.89</td>
+       <td style="text-align:right;">-108.2</td>
+       <td style="text-align:right;">4652</td>
+     </tr>
+     <tr>
+       <td> NM Hagerman 10 ESE</td>
+       <td>USRCRN</td>
+       <td>2010-09-04 12:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.09</td>
+       <td style="text-align:right;">-104.16</td>
+       <td style="text-align:right;">3552</td>
+     </tr>
+     <tr>
+       <td> NM Las Cruces 20 N</td>
+       <td>CRN</td>
+       <td>2007-02-28 16:00</td>
+       <td></td>
+       <td style="text-align:right;">32.61</td>
+       <td style="text-align:right;">-106.74</td>
+       <td style="text-align:right;">4327</td>
+     </tr>
+     <tr>
+       <td> NM Las Vegas 6 NE</td>
+       <td>USRCRN</td>
+       <td>2011-06-25 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">35.66</td>
+       <td style="text-align:right;">-105.14</td>
+       <td style="text-align:right;">6847</td>
+     </tr>
+     <tr>
+       <td> NM Los Alamos 13 W</td>
+       <td>CRN</td>
+       <td>2004-08-01 01:00</td>
+       <td></td>
+       <td style="text-align:right;">35.86</td>
+       <td style="text-align:right;">-106.52</td>
+       <td style="text-align:right;">8716</td>
+     </tr>
+     <tr>
+       <td> NM Mills 6 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-05-12 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.06</td>
+       <td style="text-align:right;">-104.36</td>
+       <td style="text-align:right;">5866</td>
+     </tr>
+     <tr>
+       <td> NM Mountainair 2 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-06-27 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.52</td>
+       <td style="text-align:right;">-106.27</td>
+       <td style="text-align:right;">6489</td>
+     </tr>
+     <tr>
+       <td> NM Nageezi 18 SSW</td>
+       <td>USRCRN</td>
+       <td>2010-09-01 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.03</td>
+       <td style="text-align:right;">-107.9</td>
+       <td style="text-align:right;">6449</td>
+     </tr>
+     <tr>
+       <td> NM Pinon 8 SSE</td>
+       <td>USRCRN</td>
+       <td>2011-10-01 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">32.51</td>
+       <td style="text-align:right;">-105.34</td>
+       <td style="text-align:right;">5456</td>
+     </tr>
+     <tr>
+       <td> NM Ramah 9 SE</td>
+       <td>USRCRN</td>
+       <td>2010-09-02 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">35.05</td>
+       <td style="text-align:right;">-108.36</td>
+       <td style="text-align:right;">7164</td>
+     </tr>
+     <tr>
+       <td> NM Raton 26 ESE</td>
+       <td>USRCRN</td>
+       <td>2010-05-14 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.78</td>
+       <td style="text-align:right;">-103.98</td>
+       <td style="text-align:right;">7232</td>
+     </tr>
+     <tr>
+       <td> NM Reserve 1 W</td>
+       <td>USRCRN</td>
+       <td>2009-07-10 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.71</td>
+       <td style="text-align:right;">-108.78</td>
+       <td style="text-align:right;">5842</td>
+     </tr>
+     <tr>
+       <td> NM Santa Fe 20 WNW</td>
+       <td>USRCRN</td>
+       <td>2010-05-09 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">35.82</td>
+       <td style="text-align:right;">-106.32</td>
+       <td style="text-align:right;">7258</td>
+     </tr>
+     <tr>
+       <td> NM Socorro 17 WSW</td>
+       <td>USRCRN</td>
+       <td>2010-06-26 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">33.98</td>
+       <td style="text-align:right;">-107.19</td>
+       <td style="text-align:right;">10486</td>
+     </tr>
+     <tr>
+       <td> NM Socorro 20 N</td>
+       <td>CRN</td>
+       <td>2003-05-24 15:00</td>
+       <td></td>
+       <td style="text-align:right;">34.36</td>
+       <td style="text-align:right;">-106.89</td>
+       <td style="text-align:right;">4847</td>
+     </tr>
+     <tr>
+       <td> NM Taos 27 NW</td>
+       <td>USRCRN</td>
+       <td>2009-11-04 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">36.65</td>
+       <td style="text-align:right;">-105.97</td>
+       <td style="text-align:right;">8151</td>
+     </tr>
+     <tr>
+       <td> NM Vaughn 36 SSE</td>
+       <td>USRCRN</td>
+       <td>2010-08-28 01:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">34.14</td>
+       <td style="text-align:right;">-104.93</td>
+       <td style="text-align:right;">5034</td>
+     </tr>
+     <tr>
+       <td> NV Baker 5 W</td>
+       <td>CRN</td>
+       <td>2004-05-09 16:00</td>
+       <td></td>
+       <td style="text-align:right;">39.01</td>
+       <td style="text-align:right;">-114.21</td>
+       <td style="text-align:right;">6617</td>
+     </tr>
+     <tr>
+       <td> NV Denio 52 WSW</td>
+       <td>CRN</td>
+       <td>2008-06-16 19:00</td>
+       <td></td>
+       <td style="text-align:right;">41.85</td>
+       <td style="text-align:right;">-119.64</td>
+       <td style="text-align:right;">6500</td>
+     </tr>
+     <tr>
+       <td> NV Mercury 3 SSW</td>
+       <td>CRN</td>
+       <td>2004-03-28 21:00</td>
+       <td></td>
+       <td style="text-align:right;">36.62</td>
+       <td style="text-align:right;">-116.02</td>
+       <td style="text-align:right;">3284</td>
+     </tr>
+     <tr>
+       <td> NY Ithaca 13 E</td>
+       <td>CRN</td>
+       <td>2004-10-27 22:00</td>
+       <td></td>
+       <td style="text-align:right;">42.44</td>
+       <td style="text-align:right;">-76.25</td>
+       <td style="text-align:right;">1228</td>
+     </tr>
+     <tr>
+       <td> NY Millbrook 3 W</td>
+       <td>CRN</td>
+       <td>2004-11-01 19:00</td>
+       <td></td>
+       <td style="text-align:right;">41.79</td>
+       <td style="text-align:right;">-73.74</td>
+       <td style="text-align:right;">413</td>
+     </tr>
+     <tr>
+       <td> OH Coshocton 8 NNE</td>
+       <td>CRN</td>
+       <td>2006-11-09 19:00</td>
+       <td>2016-09-19 21:00</td>
+       <td style="text-align:right;">40.37</td>
+       <td style="text-align:right;">-81.78</td>
+       <td style="text-align:right;">1120</td>
+     </tr>
+     <tr>
+       <td> OH Wooster 3 SSE</td>
+       <td>CRN</td>
+       <td>2016-11-10 22:00</td>
+       <td></td>
+       <td style="text-align:right;">40.76</td>
+       <td style="text-align:right;">-81.91</td>
+       <td style="text-align:right;">1102</td>
+     </tr>
+     <tr>
+       <td> OK Goodwell 2 E</td>
+       <td>CRN</td>
+       <td>2004-02-27 19:00</td>
+       <td></td>
+       <td style="text-align:right;">36.6</td>
+       <td style="text-align:right;">-101.6</td>
+       <td style="text-align:right;">3266</td>
+     </tr>
+     <tr>
+       <td> OK Goodwell 2 SE</td>
+       <td>CRN</td>
+       <td>2011-06-18 00:00</td>
+       <td></td>
+       <td style="text-align:right;">36.57</td>
+       <td style="text-align:right;">-101.61</td>
+       <td style="text-align:right;">3282</td>
+     </tr>
+     <tr>
+       <td> OK Stillwater 2 W</td>
+       <td>CRN</td>
+       <td>2002-03-12 14:00</td>
+       <td></td>
+       <td style="text-align:right;">36.12</td>
+       <td style="text-align:right;">-97.09</td>
+       <td style="text-align:right;">890</td>
+     </tr>
+     <tr>
+       <td> OK Stillwater 5 WNW</td>
+       <td>CRN</td>
+       <td>2002-03-12 23:00</td>
+       <td></td>
+       <td style="text-align:right;">36.13</td>
+       <td style="text-align:right;">-97.11</td>
+       <td style="text-align:right;">888</td>
+     </tr>
+     <tr>
+       <td><img src="/crn/theme/images/world.png" title="International"> ON Egbert 1 W</td>
+       <td>CRN</td>
+       <td>2004-07-16 00:00</td>
+       <td></td>
+       <td style="text-align:right;">44.23</td>
+       <td style="text-align:right;">-79.78</td>
+       <td style="text-align:right;">807</td>
+     </tr>
+     <tr>
+       <td> OR Coos Bay 8 SW</td>
+       <td>CRN</td>
+       <td>2008-08-08 20:00</td>
+       <td></td>
+       <td style="text-align:right;">43.27</td>
+       <td style="text-align:right;">-124.32</td>
+       <td style="text-align:right;">12</td>
+     </tr>
+     <tr>
+       <td> OR Corvallis 10 SSW</td>
+       <td>CRN</td>
+       <td>2006-09-14 02:00</td>
+       <td></td>
+       <td style="text-align:right;">44.42</td>
+       <td style="text-align:right;">-123.33</td>
+       <td style="text-align:right;">312</td>
+     </tr>
+     <tr>
+       <td> OR John Day 35 WNW</td>
+       <td>CRN</td>
+       <td>2003-03-30 02:00</td>
+       <td></td>
+       <td style="text-align:right;">44.56</td>
+       <td style="text-align:right;">-119.65</td>
+       <td style="text-align:right;">2245</td>
+     </tr>
+     <tr>
+       <td> OR Riley 10 WSW</td>
+       <td>CRN</td>
+       <td>2003-07-03 04:00</td>
+       <td></td>
+       <td style="text-align:right;">43.47</td>
+       <td style="text-align:right;">-119.69</td>
+       <td style="text-align:right;">4583</td>
+     </tr>
+     <tr>
+       <td> PA Avondale 2 N</td>
+       <td>CRN</td>
+       <td>2006-06-02 16:00</td>
+       <td></td>
+       <td style="text-align:right;">39.86</td>
+       <td style="text-align:right;">-75.79</td>
+       <td style="text-align:right;">400</td>
+     </tr>
+     <tr>
+       <td> RI Kingston 1 NW</td>
+       <td>CRN</td>
+       <td>2001-12-16 22:00</td>
+       <td></td>
+       <td style="text-align:right;">41.49</td>
+       <td style="text-align:right;">-71.54</td>
+       <td style="text-align:right;">115</td>
+     </tr>
+     <tr>
+       <td> RI Kingston 1 W</td>
+       <td>CRN</td>
+       <td>2001-12-16 22:00</td>
+       <td></td>
+       <td style="text-align:right;">41.48</td>
+       <td style="text-align:right;">-71.54</td>
+       <td style="text-align:right;">106</td>
+     </tr>
+     <tr>
+       <td><img src="/crn/theme/images/world.png" title="International"> SA Tiksi 4 SSE</td>
+       <td>CRN</td>
+       <td>2011-04-23 22:00</td>
+       <td>2018-11-06 23:00</td>
+       <td style="text-align:right;">71.59</td>
+       <td style="text-align:right;">128.92</td>
+       <td style="text-align:right;">30</td>
+     </tr>
+     <tr>
+       <td> SC Blackville 3 W</td>
+       <td>CRN</td>
+       <td>2002-07-13 14:00</td>
+       <td></td>
+       <td style="text-align:right;">33.36</td>
+       <td style="text-align:right;">-81.33</td>
+       <td style="text-align:right;">317</td>
+     </tr>
+     <tr>
+       <td> SC McClellanville 7 NE</td>
+       <td>CRN</td>
+       <td>2002-08-15 18:00</td>
+       <td></td>
+       <td style="text-align:right;">33.15</td>
+       <td style="text-align:right;">-79.36</td>
+       <td style="text-align:right;">9</td>
+     </tr>
+     <tr>
+       <td> SD Aberdeen 35 WNW</td>
+       <td>CRN</td>
+       <td>2007-06-26 20:00</td>
+       <td></td>
+       <td style="text-align:right;">45.71</td>
+       <td style="text-align:right;">-99.13</td>
+       <td style="text-align:right;">1957</td>
+     </tr>
+     <tr>
+       <td> SD Buffalo 13 ESE</td>
+       <td>CRN</td>
+       <td>2004-09-22 01:00</td>
+       <td></td>
+       <td style="text-align:right;">45.52</td>
+       <td style="text-align:right;">-103.3</td>
+       <td style="text-align:right;">2883</td>
+     </tr>
+     <tr>
+       <td> SD Pierre 24 S</td>
+       <td>CRN</td>
+       <td>2006-10-24 19:00</td>
+       <td></td>
+       <td style="text-align:right;">44.02</td>
+       <td style="text-align:right;">-100.35</td>
+       <td style="text-align:right;">2124</td>
+     </tr>
+     <tr>
+       <td> SD Sioux Falls 14 NNE</td>
+       <td>CRN</td>
+       <td>2002-07-28 19:00</td>
+       <td></td>
+       <td style="text-align:right;">43.73</td>
+       <td style="text-align:right;">-96.62</td>
+       <td style="text-align:right;">1594</td>
+     </tr>
+     <tr>
+       <td> TN Crossville 7 NW</td>
+       <td>CRN</td>
+       <td>2004-12-03 20:00</td>
+       <td></td>
+       <td style="text-align:right;">36.01</td>
+       <td style="text-align:right;">-85.13</td>
+       <td style="text-align:right;">1913</td>
+     </tr>
+     <tr>
+       <td> TX Austin 33 NW</td>
+       <td>CRN</td>
+       <td>2008-02-02 00:00</td>
+       <td></td>
+       <td style="text-align:right;">30.62</td>
+       <td style="text-align:right;">-98.08</td>
+       <td style="text-align:right;">1361</td>
+     </tr>
+     <tr>
+       <td> TX Bronte 11 NNE</td>
+       <td>CRN</td>
+       <td>2006-12-15 23:00</td>
+       <td></td>
+       <td style="text-align:right;">32.04</td>
+       <td style="text-align:right;">-100.25</td>
+       <td style="text-align:right;">1997</td>
+     </tr>
+     <tr>
+       <td> TX Edinburg 17 NNE</td>
+       <td>CRN</td>
+       <td>2004-02-19 23:00</td>
+       <td></td>
+       <td style="text-align:right;">26.53</td>
+       <td style="text-align:right;">-98.06</td>
+       <td style="text-align:right;">64</td>
+     </tr>
+     <tr>
+       <td> TX Monahans 6 ENE</td>
+       <td>CRN</td>
+       <td>2003-05-21 15:00</td>
+       <td></td>
+       <td style="text-align:right;">31.62</td>
+       <td style="text-align:right;">-102.81</td>
+       <td style="text-align:right;">2724</td>
+     </tr>
+     <tr>
+       <td> TX Muleshoe 19 S</td>
+       <td>CRN</td>
+       <td>2004-02-27 10:00</td>
+       <td></td>
+       <td style="text-align:right;">33.96</td>
+       <td style="text-align:right;">-102.77</td>
+       <td style="text-align:right;">3742</td>
+     </tr>
+     <tr>
+       <td> TX Palestine 6 WNW</td>
+       <td>CRN</td>
+       <td>2003-05-26 00:00</td>
+       <td></td>
+       <td style="text-align:right;">31.78</td>
+       <td style="text-align:right;">-95.72</td>
+       <td style="text-align:right;">383</td>
+     </tr>
+     <tr>
+       <td> TX Panther Junction 2 N</td>
+       <td>CRN</td>
+       <td>2007-02-24 16:00</td>
+       <td></td>
+       <td style="text-align:right;">29.35</td>
+       <td style="text-align:right;">-103.21</td>
+       <td style="text-align:right;">3494</td>
+     </tr>
+     <tr>
+       <td> TX Port Aransas 32 NNE</td>
+       <td>CRN</td>
+       <td>2007-11-16 23:00</td>
+       <td></td>
+       <td style="text-align:right;">28.3</td>
+       <td style="text-align:right;">-96.82</td>
+       <td style="text-align:right;">15</td>
+     </tr>
+     <tr>
+       <td> UT Beaver 15 E</td>
+       <td>USRCRN</td>
+       <td>2011-09-22 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.27</td>
+       <td style="text-align:right;">-112.38</td>
+       <td style="text-align:right;">10132</td>
+     </tr>
+     <tr>
+       <td> UT Blanding 26 SSW</td>
+       <td>USRCRN</td>
+       <td>2010-08-15 20:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.27</td>
+       <td style="text-align:right;">-109.61</td>
+       <td style="text-align:right;">4390</td>
+     </tr>
+     <tr>
+       <td> UT Bluff 32 NW</td>
+       <td>USRCRN</td>
+       <td>2010-08-13 22:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.6</td>
+       <td style="text-align:right;">-109.99</td>
+       <td style="text-align:right;">6428</td>
+     </tr>
+     <tr>
+       <td> UT Brigham City 28 WNW</td>
+       <td>CRN</td>
+       <td>2007-08-19 18:00</td>
+       <td></td>
+       <td style="text-align:right;">41.62</td>
+       <td style="text-align:right;">-112.54</td>
+       <td style="text-align:right;">4951</td>
+     </tr>
+     <tr>
+       <td> UT Cedar City 18 SSE</td>
+       <td>USRCRN</td>
+       <td>2010-08-04 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.46</td>
+       <td style="text-align:right;">-113.22</td>
+       <td style="text-align:right;">5096</td>
+     </tr>
+     <tr>
+       <td> UT Delta 4 NE</td>
+       <td>USRCRN</td>
+       <td>2010-08-01 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.39</td>
+       <td style="text-align:right;">-112.51</td>
+       <td style="text-align:right;">4761</td>
+     </tr>
+     <tr>
+       <td> UT Grantsville 12 WNW</td>
+       <td>USRCRN</td>
+       <td>2011-09-21 20:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.64</td>
+       <td style="text-align:right;">-112.68</td>
+       <td style="text-align:right;">4578</td>
+     </tr>
+     <tr>
+       <td> UT Manila 18 ESE</td>
+       <td>USRCRN</td>
+       <td>2011-09-20 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.92</td>
+       <td style="text-align:right;">-109.39</td>
+       <td style="text-align:right;">6536</td>
+     </tr>
+     <tr>
+       <td> UT Mexican Hat 10 NW</td>
+       <td>USRCRN</td>
+       <td>2010-08-18 18:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.25</td>
+       <td style="text-align:right;">-109.99</td>
+       <td style="text-align:right;">6364</td>
+     </tr>
+     <tr>
+       <td> UT Midway 3 NE</td>
+       <td>USRCRN</td>
+       <td>2010-07-23 02:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.55</td>
+       <td style="text-align:right;">-111.41</td>
+       <td style="text-align:right;">5748</td>
+     </tr>
+     <tr>
+       <td> UT Milford 42 WNW</td>
+       <td>USRCRN</td>
+       <td>2010-08-02 22:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.59</td>
+       <td style="text-align:right;">-113.75</td>
+       <td style="text-align:right;">5255</td>
+     </tr>
+     <tr>
+       <td> UT Monticello 24 NW</td>
+       <td>USRCRN</td>
+       <td>2010-08-14 21:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.14</td>
+       <td style="text-align:right;">-109.62</td>
+       <td style="text-align:right;">5025</td>
+     </tr>
+     <tr>
+       <td> UT Price 3 E</td>
+       <td>USRCRN</td>
+       <td>2011-09-17 23:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">39.61</td>
+       <td style="text-align:right;">-110.75</td>
+       <td style="text-align:right;">5835</td>
+     </tr>
+     <tr>
+       <td> UT Provo 22 E</td>
+       <td>USRCRN</td>
+       <td>2010-07-31 20:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.28</td>
+       <td style="text-align:right;">-111.24</td>
+       <td style="text-align:right;">7808</td>
+     </tr>
+     <tr>
+       <td> UT Spanish Valley 25 SW</td>
+       <td>USRCRN</td>
+       <td>2011-09-19 00:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">38.31</td>
+       <td style="text-align:right;">-109.85</td>
+       <td style="text-align:right;">6275</td>
+     </tr>
+     <tr>
+       <td> UT St. George 15 NE</td>
+       <td>USRCRN</td>
+       <td>2010-08-05 19:00</td>
+       <td>2012-09-27 20:00</td>
+       <td style="text-align:right;">37.22</td>
+       <td style="text-align:right;">-113.38</td>
+       <td style="text-align:right;">3417</td>
+     </tr>
+     <tr>
+       <td> UT Torrey 7 E</td>
+       <td>CRN</td>
+       <td>2007-10-02 23:00</td>
+       <td></td>
+       <td style="text-align:right;">38.3</td>
+       <td style="text-align:right;">-111.29</td>
+       <td style="text-align:right;">6204</td>
+     </tr>
+     <tr>
+       <td> UT Tropic 9 SE</td>
+       <td>USRCRN</td>
+       <td>2009-07-14 01:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">37.52</td>
+       <td style="text-align:right;">-111.98</td>
+       <td style="text-align:right;">5895</td>
+     </tr>
+     <tr>
+       <td> UT Vernal 23 SSE</td>
+       <td>USRCRN</td>
+       <td>2011-09-20 01:00</td>
+       <td>2014-06-01 23:00</td>
+       <td style="text-align:right;">40.13</td>
+       <td style="text-align:right;">-109.64</td>
+       <td style="text-align:right;">4674</td>
+     </tr>
+     <tr>
+       <td> VA Cape Charles 5 ENE</td>
+       <td>CRN</td>
+       <td>2004-03-03 17:00</td>
+       <td></td>
+       <td style="text-align:right;">37.29</td>
+       <td style="text-align:right;">-75.93</td>
+       <td style="text-align:right;">29</td>
+     </tr>
+     <tr>
+       <td> VA Charlottesville 2 SSE</td>
+       <td>CRN</td>
+       <td>2007-03-29 15:00</td>
+       <td></td>
+       <td style="text-align:right;">38</td>
+       <td style="text-align:right;">-78.47</td>
+       <td style="text-align:right;">1177</td>
+     </tr>
+     <tr>
+       <td> WA Darrington 21 NNE</td>
+       <td>CRN</td>
+       <td>2003-04-03 05:00</td>
+       <td></td>
+       <td style="text-align:right;">48.54</td>
+       <td style="text-align:right;">-121.45</td>
+       <td style="text-align:right;">407</td>
+     </tr>
+     <tr>
+       <td> WA Quinault 4 NE</td>
+       <td>CRN</td>
+       <td>2006-09-09 19:00</td>
+       <td></td>
+       <td style="text-align:right;">47.51</td>
+       <td style="text-align:right;">-123.81</td>
+       <td style="text-align:right;">286</td>
+     </tr>
+     <tr>
+       <td> WA Spokane 17 SSW</td>
+       <td>CRN</td>
+       <td>2007-08-01 03:00</td>
+       <td></td>
+       <td style="text-align:right;">47.42</td>
+       <td style="text-align:right;">-117.53</td>
+       <td style="text-align:right;">2267</td>
+     </tr>
+     <tr>
+       <td> WI Necedah 5 WNW</td>
+       <td>CRN</td>
+       <td>2004-10-01 21:00</td>
+       <td></td>
+       <td style="text-align:right;">44.06</td>
+       <td style="text-align:right;">-90.17</td>
+       <td style="text-align:right;">933</td>
+     </tr>
+     <tr>
+       <td> WV Elkins 21 ENE</td>
+       <td>CRN</td>
+       <td>2003-11-17 17:00</td>
+       <td></td>
+       <td style="text-align:right;">39.01</td>
+       <td style="text-align:right;">-79.47</td>
+       <td style="text-align:right;">3390</td>
+     </tr>
+     <tr>
+       <td> WY Lander 11 SSE</td>
+       <td>CRN</td>
+       <td>2004-07-03 22:00</td>
+       <td></td>
+       <td style="text-align:right;">42.68</td>
+       <td style="text-align:right;">-108.67</td>
+       <td style="text-align:right;">5773</td>
+     </tr>
+     <tr>
+       <td> WY Moose 1 NNE</td>
+       <td>CRN</td>
+       <td>2004-06-30 20:00</td>
+       <td></td>
+       <td style="text-align:right;">43.66</td>
+       <td style="text-align:right;">-110.71</td>
+       <td style="text-align:right;">6466</td>
+     </tr>
+     <tr>
+       <td> WY Sundance 8 NNW</td>
+       <td>CRN</td>
+       <td>2007-08-22 23:00</td>
+       <td></td>
+       <td style="text-align:right;">44.52</td>
+       <td style="text-align:right;">-104.44</td>
+       <td style="text-align:right;">5792</td>
+     </tr>
+    </table>
+
+
+            </div><!-- /inset -->
+        </div><!-- /#content -->
+
+        <!-- BEGIN Footer -->
+		<footer id="footer" class="clearfix">
+			<div class="inset">
+
+				<div class="subfooter">
+					<a role="link" href="https://www.commerce.gov/" rel="nofollow"><img src="https://www.ncdc.noaa.gov/shared/v1/images/logos/logo_doc_dark.png" alt="Click to visit the U.S. Department of Commerce Website" /></a>
+					<a role="link" href="https://www.usa.gov" rel="nofollow"><img src="https://www.ncdc.noaa.gov/shared/v1/images/logos/logo_usagov.png" alt="Click to visit USA.gov" /></a>
+					<a role="link" href="https://www.ready.gov" rel="nofollow"><img src="https://www.ncdc.noaa.gov/shared/v1/images/logos/logo_ready.png" alt="Click to visit Ready.gov" /></a>
+				</div>
+
+				<ul class="menu">
+					<li><a role="link" title="NCDC" href="//www.ncdc.noaa.gov/">NCEI</a></li>
+					<li><a role="link" title="About" href="//www.ncdc.noaa.gov/about">About</a></li>
+					<li><a role="link" title="General help section" href="//www.ncdc.noaa.gov/sitemap">Site Map</a></li>
+				</ul>
+
+				<ul class="menu">
+					<li><a role="link" title="NOAA's Privacy Policy" href="https://www.noaa.gov/privacy.html" rel="external nofollow">Privacy</a></li>
+					<li><a role="link" title="Freedom of Information Act" href="https://www.rdc.noaa.gov/%7Efoia/" rel="external nofollow">FOIA</a></li>
+					<li><a role="link" title="Information Quality" href="https://www.cio.noaa.gov/Policy_Programs/info_quality.html" rel="external nofollow">Information Quality</a></li>
+					<li><a role="link" title="Disclaimer" href="https://www.noaa.gov/disclaimer.html" rel="external nofollow">Disclaimer</a></li>
+				</ul>
+
+				<ul class="menu last">
+					<li><a role="link" title="United States Department of Commerce" href="https://www.commerce.gov/" rel="external nofollow">Department of Commerce</a></li>
+					<li><a role="link" title="NOAA" href="https://www.noaa.gov" rel="external nofollow">NOAA</a></li>
+					<li><a role="link" title="NESDIS" href="https://www.nesdis.noaa.gov/" rel="external nofollow">NESDIS</a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+
+				<div id="footerCrumbs" class="clearfix">
+					<a class="ext" href="//www.commerce.gov/" target="_blank" title="Department of Commerce">Department of Commerce</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a class="ext" href="//www.noaa.gov/" target="_blank" title="NOAA">NOAA</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a class="ext" href="//www.nesdis.noaa.gov/" target="_blank" title="NESDIS">NESDIS</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a href="//www.ncei.noaa.gov/" title="NCEI">NCEI</a>&nbsp;&gt;&nbsp;<a href="//www.ncdc.noaa.gov/" title="NCDC">NCDC</a>
+				</div>
+
+			</div><!-- /inset -->
+		</footer><!-- /#footer -->
+		<!-- END Footer -->
+
+
+
+	</div><!-- /#main -->
+
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-42795060-3', 'noaa.gov');
+	  ga('set', 'anonymizeIp', true);
+	  ga('send', 'pageview');
+	</script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="/scripts/federated-analytics.js?agency=DOC%26subagency=NOAA"></script></body>
+
+</html>
