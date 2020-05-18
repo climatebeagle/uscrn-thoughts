@@ -1,5 +1,6 @@
-<!doctype html>
-<html lang="en">
+import React from 'react'
+const StationMap = () => (
+  <div>
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
     <style>
@@ -32,4 +33,8 @@
       });
     </script>
   </body>
+  </div>
 </html>
+)
+
+export default StationMap
