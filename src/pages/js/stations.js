@@ -1,5 +1,5 @@
 
-addStation = function(station, style) {
+function addStation(station, style) {
     var station = new ol.Feature({
       geometry: new ol.geom.Point(ol.proj.fromLonLat([station.lon, station.lat]))
     });
@@ -8,7 +8,7 @@ addStation = function(station, style) {
     return station
 }
 
-addStations = function(stations) {
+function addStations(stations) {
    var style = new ol.style.Style({
       image: new ol.style.Icon({
          color: 'FUCHSIA',
