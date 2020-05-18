@@ -34,7 +34,6 @@ const StationMap = () => (
     </script>
   </body>
   </div>
-</html>
 )
 
 export default StationMap
