@@ -23,7 +23,7 @@
           new ol.layer.Tile({
             source: new ol.source.OSM()
           }),
-          addStations(uscrn_stations)
+          addStations(uscrn_stations())
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([-98.579, 39.828]),

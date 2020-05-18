@@ -27,7 +27,7 @@ for idx, station in crn.iterrows():
     js['conus'] = conus
     stations.append(js)
 
-with open('../../src/data/stations.js', 'w') as sf:
-    sf.write("uscrn_stations = ")
+with open('../../src/pages/data/stations.js', 'w') as sf:
+    sf.write("function uscrn_stations() { \n return ")
     json.dump(stations, sf)
-    sf.write(";\n")
+    sf.write(";\n}\n")
