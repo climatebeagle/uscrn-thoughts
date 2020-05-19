@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'USCRN Thoughts',
+    author: 'climatebeagle',
+    description: 'Looking at US Climate Reference Network.',
+    siteUrl: 'https://uscrn-thoughts.netlify.app',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/uscrn-thoughts',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
