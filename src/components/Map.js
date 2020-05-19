@@ -4,6 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
+import mapjs from './maps/map.js'
 import { rhythm } from '../utils/typography'
 
 class Map extends React.Component {
@@ -17,7 +18,7 @@ class Map extends React.Component {
       >
     <h2>USCRN Stations</h2>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
-    <script src="maps/map.js"></script>
+    <script src={mapjs}/>
     <script type="text/javascript">
       var map = createUSCRNMap();
     </script>
