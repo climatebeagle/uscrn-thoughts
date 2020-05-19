@@ -1,4 +1,4 @@
-function createUSCRNMap() {
+export function createUSCRNMap() {
       return new ol.Map({
         target: 'map',
         layers: [
