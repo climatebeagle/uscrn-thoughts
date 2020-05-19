@@ -6,7 +6,7 @@ import 'typeface-merriweather'
 
 import { rhythm } from '../utils/typography'
 
-class Bio extends React.Component {
+class Map extends React.Component {
   render() {
     return (
     <div
@@ -36,4 +36,4 @@ class Bio extends React.Component {
   }
 }
 
-export default Bio
+export default Map
