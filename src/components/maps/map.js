@@ -1,3 +1,5 @@
+import 'ol/ol.css';
+
 export function createUSCRNMap() {
       return new ol.Map({
         target: 'map',
