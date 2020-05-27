@@ -8,6 +8,10 @@ import { createUSCRNMap } from './maps/map'
 import { rhythm } from '../utils/typography'
 
 class Map extends React.Component {
+  constructor(props){
+      super(props);
+      this.drawMap=this.drawMap.bind(this);
+  }
   drawMap() {
     var map = createUSCRNMap();
   }
