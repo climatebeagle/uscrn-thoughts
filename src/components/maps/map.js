@@ -2,7 +2,7 @@ import 'ol/ol.css';
 
 export function createUSCRNMap() {
       return new ol.Map({
-        target: 'map',
+        target: 'uscrnmap',
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
