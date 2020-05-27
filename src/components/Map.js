@@ -4,7 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import { createISCRNMap } from './maps/map'
+import { createUSCRNMap } from './maps/map'
 import { rhythm } from '../utils/typography'
 
 class Map extends React.Component {
@@ -18,7 +18,7 @@ class Map extends React.Component {
       >
     <h2>USCRN Stations</h2>
     <script type="text/javascript">
-      var map = this.createUSCRNMap();
+      var map = createUSCRNMap();
     </script>
     </div>
     )
