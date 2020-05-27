@@ -13,9 +13,13 @@ class Map extends React.Component {
       this.drawMap=this.drawMap.bind(this);
     console.log("HELLO1")
   }
-  drawMap() {
-    var map = createUSCRNMap();
-  }
+  
+  componentDidMount() {
+    console.log("LOADING MAP")
+       var map = createUSCRNMap()
+       console.log("LOADED MAP")
+ }
+
   render() {
     return (
     <div
@@ -24,10 +28,6 @@ class Map extends React.Component {
           marginBottom: rhythm(2.5),
         }}
       >
-    <h2>USCRN Stations-2</h2>
-    <script type="text/javascript">
-      this.drawMap();
-    </script>
     </div>
     )
   }
