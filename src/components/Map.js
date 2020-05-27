@@ -10,24 +10,23 @@ import { rhythm } from '../utils/typography'
 class Map extends React.Component {
   constructor(props){
       super(props);
-      this.drawMap=this.drawMap.bind(this);
-    console.log("HELLO1")
+    console.log("MapCons")
   }
-  drawMap() {
-    var map = createUSCRNMap();
-  }
+  
+  componentDidMount() {
+    console.log("LOADING MAP")
+       var map = createUSCRNMap()
+       console.log("LOADED MAP")
+ }
+
   render() {
     return (
-    <div
+    <div id="uscrnmap"
         style={{
           display: 'flex',
           marginBottom: rhythm(2.5),
         }}
       >
-    <h2>USCRN Stations-2</h2>
-    <script type="text/javascript">
-      this.drawMap();
-    </script>
     </div>
     )
   }
