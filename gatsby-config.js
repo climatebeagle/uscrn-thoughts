@@ -53,5 +53,11 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    {
+    resolve: `gatsby-plugin-compile-es6-packages`,
+    options: {
+      modules: [`ol`]
+    }
+  }
   ],
 }
