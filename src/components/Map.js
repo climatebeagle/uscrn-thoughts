@@ -8,6 +8,9 @@ import { createUSCRNMap } from './maps/map'
 import { rhythm } from '../utils/typography'
 
 class Map extends React.Component {
+  drawMap() {
+    var map = createUSCRNMap();
+  }
   render() {
     return (
     <div
@@ -18,7 +21,7 @@ class Map extends React.Component {
       >
     <h2>USCRN Stations</h2>
     <script type="text/javascript">
-      var map = createUSCRNMap();
+      this.drawMap();
     </script>
     </div>
     )
