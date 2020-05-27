@@ -4,13 +4,13 @@ import {
  } from 'ol'
 import { 
     Tile
- } from 'ol.layer'
+ } from 'ol/layer'
 import { 
     OSM
- } from 'ol.source'
+ } from 'ol/source'
 import { 
     fromLonLat
- } from 'ol.proj'
+ } from 'ol/proj'
 
 export function createUSCRNMap() {
       return new Map({
