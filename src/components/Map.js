@@ -16,8 +16,6 @@ class Map extends React.Component {
         }}
       >
     <h2>USCRN Stations</h2>
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
-    <script src="./maps/map.js"></script>    
     <script type="text/javascript">
       var map = createUSCRNMap();
     </script>
