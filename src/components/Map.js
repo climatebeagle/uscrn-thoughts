@@ -10,8 +10,7 @@ import { rhythm } from '../utils/typography'
 class Map extends React.Component {
   constructor(props){
       super(props);
-      this.drawMap=this.drawMap.bind(this);
-    console.log("HELLO1")
+    console.log("MapCons")
   }
   
   componentDidMount() {
