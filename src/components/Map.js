@@ -22,7 +22,7 @@ class Map extends React.Component {
 
   render() {
     return (
-    <div
+    <div id="uscrnmap"
         style={{
           display: 'flex',
           marginBottom: rhythm(2.5),
