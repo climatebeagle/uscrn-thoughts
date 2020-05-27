@@ -17,7 +17,9 @@ class Map extends React.Component {
         }}
       >
     <h2>USCRN Stations</h2>
-    { var map = createUSCRNMap(); }
+    <script type="text/javascript">
+      var map = createUSCRNMap();
+    </script>
     </div>
     )
   }
