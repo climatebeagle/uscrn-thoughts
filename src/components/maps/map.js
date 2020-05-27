@@ -1,15 +1,27 @@
-import 'ol/ol.css';
+import { 
+    Map,
+    View
+ } from 'ol'
+import { 
+    Tile
+ } from 'ol.layer'
+import { 
+    OSM
+ } from 'ol.source'
+import { 
+    fromLonLat
+ } from 'ol.proj'
 
 export function createUSCRNMap() {
-      return new ol.Map({
+      return new Map({
         target: 'uscrnmap',
         layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
+          new Tile({
+            source: new OSM()
           })
         ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([-98.579, 39.828]),
+        view: new View({
+          center: fromLonLat([-98.579, 39.828]),
           zoom: 4
         })
       });
