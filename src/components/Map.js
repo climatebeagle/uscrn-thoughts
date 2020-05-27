@@ -4,6 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
+import { createISCRNMap } from './maps/map'
 import { rhythm } from '../utils/typography'
 
 class Map extends React.Component {
