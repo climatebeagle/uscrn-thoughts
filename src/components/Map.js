@@ -11,6 +11,7 @@ class Map extends React.Component {
   constructor(props){
       super(props);
       this.drawMap=this.drawMap.bind(this);
+    console.log("HELLO1")
   }
   drawMap() {
     var map = createUSCRNMap();
@@ -23,7 +24,7 @@ class Map extends React.Component {
           marginBottom: rhythm(2.5),
         }}
       >
-    <h2>USCRN Stations</h2>
+    <h2>USCRN Stations-2</h2>
     <script type="text/javascript">
       this.drawMap();
     </script>
