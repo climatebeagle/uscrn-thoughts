@@ -5,7 +5,6 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import { createUSCRNMap } from './maps/map'
-import { rhythm } from '../utils/typography'
 
 class USCRNMap extends React.Component {
   constructor(props){
@@ -15,18 +14,20 @@ class USCRNMap extends React.Component {
   
   componentDidMount() {
     console.log("LOADING MAP")
-       var map = createUSCRNMap()
+       createUSCRNMap()
        console.log("LOADED MAP")
  }
 
   render() {
     return (
     <div id="uscrnmap"
-        style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
-        }}
-      >
+      style={{
+        height: `600px`,
+        width: `100%`,
+      }}
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    </link>
     </div>
     )
   }
