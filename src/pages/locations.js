@@ -2,16 +2,18 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
+import Layout from "../components/layout"
 import USCRNMap from '../components/uscrnmap'
 
 class Locations extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     return (
+    <Layout location={location} title={siteTitle}>
       <div>
-        <Helmet title={siteTitle} />
         <USCRNMap />
       </div>
+    </Layout>
     )
   }
 }
