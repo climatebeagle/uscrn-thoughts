@@ -7,7 +7,6 @@ import USCRNMap from '../components/uscrnmap'
 
 // class Locations extends React.Component {
 const Locations = ({ data, location }) => {
-  render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     return (
     <Layout location={location} title={siteTitle}>
@@ -16,7 +15,6 @@ const Locations = ({ data, location }) => {
       </div>
     </Layout>
     )
-  }
 }
 
 export default Locations
