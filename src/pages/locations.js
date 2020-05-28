@@ -9,7 +9,7 @@ class Locations extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <div>
         <USCRNMap />
       </div>
