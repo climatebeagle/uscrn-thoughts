@@ -21,13 +21,14 @@ for idx, station in crn.iterrows():
     js = {}
     js['name'] = station['STATION']
     js['state'] = station['STATION'].split()[0]
-    #js['start_date'] = station['STATION']
+    js['start_date'] = station['OPERATIONAL DATE']
     js['lat'] = station['LATITUDE']
     js['lon'] = station['LONGITUDE']
+    js['elevation'] = station['ELEVATION (FT)']
     js['conus'] = conus
     stations.append(js)
 
-with open('../../src/pages/data/stations.js', 'w') as sf:
+with open('../../src/components/data/stations.js', 'w') as sf:
     sf.write("function uscrn_stations() { \n return ")
     json.dump(stations, sf)
     sf.write(";\n}\n")

@@ -21,7 +21,7 @@ function showUSCRN(overlay, map, content, coordinate) {
 function hoverHTML(feature) {
   var name = feature.values_.uscrn.name;
   var text = '&nbsp;' + name + '&nbsp;';
-  return text;
+  return '<pre>' + text + '</pre>';
 }
 
 function createPopup(ol, map) {
