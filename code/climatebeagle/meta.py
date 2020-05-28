@@ -29,6 +29,6 @@ for idx, station in crn.iterrows():
     stations.append(js)
 
 with open('../../src/components/data/stations.js', 'w') as sf:
-    sf.write("function uscrn_stations() { \n return ")
+    sf.write("export function uscrn_stations() { \n return ")
     json.dump(stations, sf)
     sf.write(";\n}\n")
