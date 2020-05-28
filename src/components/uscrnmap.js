@@ -3,20 +3,12 @@ import React from 'react'
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
-
 import { createUSCRNMap } from './maps/map'
 
 class USCRNMap extends React.Component {
-  constructor(props){
-      super(props);
-    console.log("MapCons")
-  }
-  
   componentDidMount() {
-    console.log("LOADING MAP")
-       createUSCRNMap()
-       console.log("LOADED MAP")
- }
+     createUSCRNMap();
+  }
 
   render() {
     return (
