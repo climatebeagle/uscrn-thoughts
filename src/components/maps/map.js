@@ -3,15 +3,15 @@
 //import { OSM } from 'ol/source'
 //import { fromLonLat } from 'ol/proj'
 
-import uscrn_stations from '../data/stations.js'
+import { uscrn_stations } from '../data/stations'
 
 function addStation(ol, olp, olg, station, style) {
-    var station = new ol.Feature({
+    var sf = new ol.Feature({
       geometry: new olg.Point(olp.fromLonLat([station.lon, station.lat]))
     });
 
-    station.setStyle(style)
-    return station
+    sf.setStyle(style)
+    return sf
 }
 
 function addStations(ol, oll, ols, olp, olstyle, olg, stations) {
@@ -22,7 +22,7 @@ function addStations(ol, oll, ols, olp, olstyle, olg, stations) {
          })
       });
 
-    features = [];
+    var features = [];
     for (var i = 0; i < stations.length; i++) {
       var station = stations[i];
       features.push(addStation(ol, olp, olg, station, style))
