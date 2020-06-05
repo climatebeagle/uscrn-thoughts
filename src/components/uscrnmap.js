@@ -3,25 +3,27 @@ import React from 'react'
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
-import { createUSCRNMap } from './maps/map'
+import { createUSCRNMap, centreMap } from './maps/map'
 import StationInfo from './popup'
 import Button from 'react-bootstrap/Button'
-//import Button from 'react-bootstrap/Button'
-//import Popover from 'react-bootstrap/Popover'
-//import Overlay from 'react-bootstrap/Overlay'
 class USCRNMap extends React.Component {
   constructor() {
     super()
     this.componentDidMount = this.componentDidMount.bind(this)
   }
-  state = {}
+  state = { map: null }
   componentDidMount() {
-    console.log('Creating map')
     createUSCRNMap(this)
   }
 
+  centre(event, uscrn, area) {
+    if (uscrn.state.map == null) {
+      return
+    }
+    centreMap(uscrn.state.map, area)
+  }
+
   popupStationInfo(station, pixel) {
-    //console.log('MAP:POPUP', station)
     this.state.popup.attachToStation(station, pixel)
   }
 
@@ -32,13 +34,22 @@ class USCRNMap extends React.Component {
         <div id="uscrn-popup"></div>
         <div id="uscrn-popup-new"></div>
         <div>
-          <Button variant="primary" active>
+          <Button
+            variant="primary"
+            onClick={(event) => this.centre(event, this, 'ak')}
+          >
             Alaska
           </Button>
-          <Button variant="primary" active>
+          <Button
+            variant="primary"
+            onClick={(event) => this.centre(event, this, 'conus')}
+          >
             Conus
           </Button>
-          <Button variant="primary" active>
+          <Button
+            variant="primary"
+            onClick={(event) => this.centre(event, this, 'hi')}
+          >
             Hawaii
           </Button>
         </div>
