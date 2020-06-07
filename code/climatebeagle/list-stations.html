@@ -1,0 +1,856 @@
+<!--  stationlist -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- begin isispage.tag -->
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+<script type="text/javascript">
+function setFocus() {
+  document.getElementById('optFocus').focus()
+}
+</script>
+
+	
+		<script type="text/javascript" src="/isis/js/searchstations.js"></script>
+	
+		<script type="text/javascript" src="/isis/js/lib/jquery-3.2.1.min.js"></script>
+	
+		<script type="text/javascript" src="/isis/js/jquery-ui-1.8.custom.min.js"></script>
+	
+		<script type="text/javascript" src="/isis/js/searchWidget.js"></script>
+	
+
+<script type="text/javascript" src="/isis/js/general.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="KEYWORDS" content="Integrated Station Information System, ISIS, NOAA, metadata, station data" />
+<meta name="DESCRIPTION" content="Integrated Station Information System (ISIS) Station Metadata Access" />
+<meta name="AUTHOR" content="isis.ncdc@noaa.gov" />	
+<title>Station List: Integrated Station Information System</title>	
+<link type="text/css" rel="stylesheet" media="all" href="/isis/css/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/isis/css/shared.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/isis/css/menus.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/isis/css/extlink.css" />
+
+<link type="text/css" rel="stylesheet" media="screen and (max-width: 659px)" href="/isis/css/layout_320.css" /> 
+<link type="text/css" rel="stylesheet" media="screen and (min-width: 660px) and (max-width: 1023px)" href="/isis/css/layout_640.css" /> 
+<link type="text/css" rel="stylesheet" media="screen and (min-width: 1024px)" href="/isis/css/layout_1024.css" />
+
+<link rel="stylesheet" href="/isis/css/isis.css" type="text/css" />
+<link rel="stylesheet" href="/isis/css/print.css" type="text/css" media="print" />
+
+  <link rel="stylesheet" href="/isis/css/ui-lightness/jquery-ui-1.8.custom.css" type="text/css" />
+
+
+<style type="text/css">.classTwo {
+  list-style:none;
+  width: 0px;
+  _display:inline;
+  height:0px;
+  line-height:0px;
+  visibility:hidden;
+}
+.clear {
+  background-color: beige;
+  border: 1px solid darkkhaki;
+  color: darkkhaki;
+  padding:0px 5px;
+  margin-left: 5px;
+}</style>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>WebFont.load({ google: { families: ['Open+Sans', 'Bitter'] } });</script>
+
+</head>
+
+<body  >
+<div id="main"><a name="top"></a>
+
+<!-- begin header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+		<!-- BEGIN Header -->
+		<header>
+			<div id="header" class="clearfix" role="banner">
+				<div class="inset clearfix">
+					<a class="noaalink" href="http://www.noaa.gov/"></a>
+					<div class="title"><a href="http://www.ncdc.noaa.gov/" title="National Centers for Environmental Information">National Centers for Environmental Information<span>&nbsp;</span></a></div>
+					<a href="http://www.commerce.gov/" id="headDOC" title="Click to visit the U.S. Department of Commerce Website"></a>
+				</div>
+			</div>
+
+			<div class="formerly">
+				<div class="inset clearfix">
+					Formerly the National Climatic Data Center (NCDC)&hellip; <a id="anch_5" title="Link to the NCEI site" href="//www.ncei.noaa.gov">more about NCEI &raquo;</a>
+				</div>
+			</div>
+
+			<!-- Required for 508 compliance -->
+			<div class="element-invisible">
+				<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a><br />
+				<a class="element-invisible element-focusable" href="#site-search">Skip to site search</a>
+			</div>
+
+			<nav id="nav" class="clearfix" role="navigation">
+				<div class="inset">
+					<ul class="mainNav" role="menubar">
+						<li role="menuitem"><a href="http://www.ncdc.noaa.gov/" title="Home">NCEI Home</a></li>
+						<li role="menuitem"><a href="http://www.ncdc.noaa.gov/climate-information" title="Climate Information">Climate Information</a></li>
+						<li role="menuitem"><a href="http://www.ncdc.noaa.gov/data-access" title="Data Access">Data Access</a></li>
+						<li role="menuitem"><a href="http://www.ncdc.noaa.gov/customer-support" title="Customer Support">Customer Support</a></li>
+						<li role="menuitem"><a href="http://www.ncdc.noaa.gov/contact" title="Contact Us">Contact</a></li>
+						<li role="menuitem"><a href="http://www.ncdc.noaa.gov/about" title="About">About</a></li>
+					</ul>
+					<div class="navSearchForm" role="search">
+						<form name="sitesearchform" method="get" action="http://search.usa.gov/search">
+							<a id="site-search"></a>
+							<fieldset>
+								<legend>Search for articles, products, and data at the National Centers for Environmental Information</legend>
+								<input type="hidden" name="affiliate" value="NCEI" />
+								<label for="sitesearch">Search Field:</label>
+								<input type="text" name="query" class="searchtext inputbox" id="sitesearch" value="Search" maxlength="50" tabindex="1" />
+								<label for="sitesearchbutton">Search button:</label>
+								<input type="submit" class="submitbutton" id="sitesearchbutton" value="Search" tabindex="2" />
+							</fieldset>
+						</form>
+					</div>
+				</div><!-- /inset -->
+			</nav><!-- /#nav -->
+  
+  
+    
+		<!-- BEGIN Breadcrumbs -->
+		<div id="breadcrumbs">
+			<div class="inset">
+				<a href="/isis/" title="Integrated Station Information System">ISIS</a>&nbsp;&gt;&nbsp;<a href="/isis/stationlist.htm;jsessionid=8C7C4776CDB109F33FA9B7D2AF981B17?networkid=">Station List</a>
+
+    &nbsp;&gt;&nbsp;USCRN
+    
+    
+				<ul class="extraLinks">
+
+		         
+		           
+			       
+			       
+			       <li><a role="menuitem" href="/isis/stationlist.htm?networkid=1">Stations</a></li>
+			       <li><a role="menuitem" href="/isis/reports.htm?networkid=1">Reports</a></li>
+			       <li><a role="menuitem" href="/isis/userguide/">User Guide</a></li>
+			       
+			         
+		           
+		           <li>
+			         
+			         
+			           <a role="menuitem" href="/isis/login.htm">Login</a>
+			         
+			       </li><!-- end login li -->
+		         
+
+				</ul>
+
+			</div>
+		</div>
+	
+    
+	
+		<!-- END Breadcrumbs -->
+		
+  
+  
+
+
+  
+  
+
+<!--     <div class="network_logo" style="width:60px;float:right;"> -->
+
+
+<!--     </div> -->
+
+
+  
+   
+  
+</header>
+		<!-- END Header -->
+
+
+<table summary="layout" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+<!--  begin warnings -->
+
+
+
+
+<!--  end warnings -->
+<div id="content">
+
+<div class="table">
+<div class="tr"><div class="td" style="width:450px;vertical-align:top;">
+<h1>US Climate Reference Network</h1>
+<div class="network_logo">
+  
+  <img alt="USCRN logo" src="/isis/images/networks/USCRN.gif" />
+</div>
+<h2>Station List</h2>
+
+</div><div class="td" style="width:200px;">
+  <ul>
+  
+    
+      
+        
+        <li><strong>USCRN Station List</strong></li>
+        
+        
+      
+    
+      
+        
+        
+        
+        <li><a href="/isis/stationlist.htm?networkid=2">AL USRCRN Station List</a></li>
+        
+      
+    
+      
+        
+        
+        
+        <li><a href="/isis/stationlist.htm?networkid=3">USRCRN Station List</a></li>
+        
+      
+    
+  
+    
+      
+      <li><a href="/isis/summary.htm?networkid=1">USCRN Station Metadata Report</a></li>
+    
+    
+  </ul>
+</div></div></div>
+
+<form name="stationsearch" onSubmit="return false;">
+
+<div class="searchBox">
+	<label for="searchTerms">Search: &nbsp;</label><input type="text" id="optFocus" name="searchTerms" size="31"/> 
+	<input id="searchButton" type="button" value="Go" />
+	<input id="resetButton" type="button" value="Clear Filter"/>
+	<label for="caseSensitive">Case sensitive</label><input id="caseSensitive" name="caseSensitive" type="checkbox"/> 
+</div>
+<div id="messageArea" style="height: 2em;">
+	<div class="popUpContainer"><div id="noResults" class="popUp" style="visibility: hidden;">You shouldn't see this</div></div>
+</div>
+<ul id="stationList">
+  
+  <li><a href="/isis/station.htm?stationid=1801">AK Aleknagik 1 NNE</a> (City of Aleknagik, Aleknagik Airport)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1800">AK Bethel 87 WNW</a> (FWS, Yukon Delta National Wildlife Refuge (South Volcano Lake))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1798">AK Cordova 14 ESE</a> (Eyak Corporation, Cordova)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1793">AK Deadhorse 3 S</a> (AK Department of Natural Resources, Haul Road))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1794">AK Denali 27 N</a> (NPS, Denali National Park (Wonder Lake Campground Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1008">AK Fairbanks 11 NE</a> (NOAA / NESDIS (FCDAS))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1790">AK Glennallen 64 N</a> (BLM, Paxson Airport)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1780">AK Gustavus 2 NE</a> (The Nature Conservancy, Gustavus Forelands Preserve)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1791">AK Ivotuk 1 NNE</a> (Arctic Slope Regional Corporation, Ivotuk Airstrip)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1753">AK Kenai 29 ENE</a> (Kenai National Wildlife Refuge (Kenai Moose Research Center))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1788">AK King Salmon 42 SE</a> (NPS, Katmai National Park (Contact Creek))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1787">AK Metlakatla 6 S</a> (NOAA, National Weather Service (Annette Island))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1691">AK Port Alsworth 1 SW</a> (Lake Clark National Park)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1754">AK Red Dog Mine 3 SSW</a> (NANA Regional Corp Red Dog Mine)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1792">AK Ruby 44 ESE</a> (FWS, Nowitna National Wildlife Refuge (Lake Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1670">AK Sand Point 1 ENE</a> (USGS Shumagin Magnetic Observatory)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1795">AK Selawik 28 E</a> (FWS, Selawik National Wildlife Refuge (Cabin Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1166">AK Sitka 1 NE</a> (USGS  Sitka Magnetic Observatory)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1143">AK St. Paul 4 NE</a> (NOAA National Weather Service St Paul)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1779">AK Tok 70 SE</a> (FWS, Tetlin National Wildlife Refuge (Seaton Roadhouse site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1799">AK Toolik Lake 5 ENE</a> (BLM, Toolik Field Station)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1007">AK Utqiaġvik formerly Barrow 4 ENE</a> (NOAA Earth System Res. Lab. Observatory at Utqiaġvik (formerly Barrow))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1796">AK Yakutat 3 SSE</a> (FS, Tongass National Forest (Yakutat))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1124">AL Fairhope 3 NE</a> (Auburn University, Gulf Coast Research and Extension Center)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1119">AL Gadsden 19 N</a> (Sand Mountain Research / Extension  (Northwest Pasture))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1122">AL Selma 13 WNW</a> (Auburn University, Black Belt Research and Extension Center)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1129">AR Batesville 8 WNW</a> (LFST Br. Exp. Stn.,Univ.of AR, Div.of Agriculture(Field #1))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1010">AZ Elgin 5 S</a> (BLM, Appleton-Whittell Research Ranch)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1011">AZ Tucson 11 W</a> (Sonora Desert Museum)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1613">AZ Williams 35 NNW</a> (Babbitt Ranches (Meridian Site))</li>
+  
+  <a href="#top"><img src="/isis/images/top-clear.png" alt="top" title="top" class="bluebutton"
+    style="list-style:none;margin-left:-3em;_margin-left:-1em;_float:right;" /></a>
+  
+  <li><a href="/isis/station.htm?stationid=1590">AZ Yuma 27 ENE</a> (U.S. Army, Yuma Proving Ground  (Redbluff Pavement Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1531">CA Bodega 6 WSW</a> (University of California - Davis (Bodega Marine Laboratory))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1528">CA Fallbrook 5 NE</a> (San Diego State Univ&#039;s Santa Margarita Ecological Reserve (Old Mine Road))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1050">CA Merced 23 WSW</a> (Kesterson Reservoir (US Bureau of Reclamation))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1015">CA Redding 12 WNW</a> (Whiskeytown National Recreation Area (RAWS Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1529">CA Santa Barbara 11 W</a> (Univ. of California - Santa Barbara (Coal Oil Point Reserve))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1105">CA Stovepipe Wells 1 SW</a> (Death Valley National Park (Stovepipe Wells Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1508">CA Yosemite Village 12 W</a> (Yosemite National Park, (Crane Flat Lookout))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1045">CO Boulder 14 W</a> (Mountain Research Station INSTAAR Univ. of CO (Hills Mill))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1232">CO Cortez 8 SE</a> (Mesa Verde National Park (Far View Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1108">CO Dinosaur 2 E</a> (Dinosaur National Monument (Hdq. Maintenance Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1110">CO La Junta 17 WSW</a> (USDA Comanche National Grassland)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1109">CO Montrose 11 ENE</a> (Black Canyon of the Gunnison National Park (Vernal Mesa))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1014">CO Nunn 7 NNE</a> (Ag. Res. Svc. Central Plains Exp. Range (SGS LTER at CSU))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1128">FL Everglades City 5 NE</a> (Big Cypress National Preserve (Ochopee Headquarters Vista Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1530">FL Sebring 23 SSE</a> (Archbold Biological Station)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1141">FL Titusville 7 E</a> (NASA Kennedy Space Center, SLF Mid-Field Site)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1120">GA Brunswick 23 S</a> (Cumberland Island National Seashore (Stafford Field))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1033">GA Newton 11 SW</a> (Robert W. Woodruff Foundation (Ichauway-Dubignon Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1032">GA Newton 8 W</a> (Robert W. Woodruff Foundation (Ichauway-George Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1111">GA Watkinsville 5 SSE</a> (University of GA, Phil Campbell Sr Natural Resource Conservation Center)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1186">HI Hilo 5 S</a> (University of Hawaii Waiakea  Experiment Station)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1187">HI Mauna Loa 5 NNE</a> (Mauna Loa Obsv., NOAA Earth Systems Res. Lab.,Global Mon. Div.)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1116">IA Des Moines 17 E</a> (Neal Smith NWR (NOAA Station Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1021">ID Arco 17 SW</a> (Craters of the Moon NM &amp; Preserve (Headquarters Area))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1022">ID Murphy 10 W</a> (ARS NW  Watershed Research Cntr. (Reynolds Creek Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1037">IL Champaign 9 SW</a> (Univ. of Illinois (Bondville Environ. &amp; Atmos. Resrch. Stn.))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1038">IL Shabbona 5 NNE</a> (Northern Illinois Agronomy Research Center)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1510">IN Bedford 5 WNW</a> (Feldun-Purdue Agricultural Center, (Pasture 17 Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1047">KS Manhattan 6 SSW</a> (Kansas State University (Konza Prairie Biological Station))</li>
+  
+  <a href="#top"><img src="/isis/images/top-clear.png" alt="top" title="top" class="bluebutton"
+    style="list-style:none;margin-left:-3em;_margin-left:-1em;_float:right;" /></a>
+  
+  <li><a href="/isis/station.htm?stationid=1231">KS Oakley 19 SSW</a> (The Nature Conservancy Kansas (Smoky Valley Ranch))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1031">KY Bowling Green 21 NNE</a> (Mammoth Cave National Park (Job Corps Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1028">KY Versailles 3 NNW</a> (University of Kentucky (Woodford County Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1013">LA Lafayette 13 SE</a> (University of Louisiana at Lafayette (Cade Farm))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1012">LA Monroe 26 N</a> (Upper Ouachita National Wildlife Refuge)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1035">ME Limestone 4 NNW</a> (Aroostook National  Wildlife Ref. (Fire Training Area))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1034">ME Old Town 2 W</a> (University of Maine  (Rogers Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1113">MI Chatham 1 SE</a> (Michigan State University (Upper Peninsula Experiment Station))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1426">MI Gaylord 9 SSW</a> (National Weather Service, Gaylord)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1039">MN Goodridge 12 NNW</a> (Agassiz National Wildlife Refuge (Maintenance Shop Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1447">MN Sandstone 6 W</a> (Audubon Center of  the North Woods)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1142">MO Chillicothe 22 ENE</a> (University of Missouri (Forage Systems Research Station))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1407">MO Joplin 24 N</a> (Shawnee Trail Conservation Area)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1406">MO Salem 10 W</a> (White River Trace Conservation Area (Stand 4, Compartment 7))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1570">MS Holly Springs 4 N</a> (MSU, MAFES, North MS R&amp;E Center, (North MS Branch))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1036">MS Newton 5 ENE</a> (Mississippi State University (Coastal Plain Exp. Station))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1468">MT Dillon 18 WSW</a> (Bannack State Park, Old Freight Road Site)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1612">MT Lewistown 42 WSW</a> (Montana Department  Fish, Wildlife &amp; Parks, Judith River WMA)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1046">MT St. Mary 1 SSW</a> (Glacier National Park (St. Mary Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1001">MT Wolf Point 29 ENE</a> (Fort Peck Indian Res. (Poplar River Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1002">MT Wolf Point 34 NE</a> (Fort Peck Indian Res. (Give Out Morgan Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1027">NC Asheville 13 S</a> (NC Mtn. Horticultural Crops Res. Ctr. (Backlund Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1026">NC Asheville 8 SSW</a> (North Carolina  Arboretum (Bierbaum Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1347">NC Durham 11 W</a> (Duke Forest - Duke University)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1611">ND Jamestown 38 WSW</a> (North Dakota State University, Central Grasslands (Sec. 14 Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1139">ND Medora 7 E</a> (Theodore Roosevelt National Park (Painted Canyon Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1235">ND Northgate 5 ESE</a> (Des Lacs National Wildlife Refuge (HB-4 Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1025">NE Harrison 20 SSE</a> (Agate Fossil Beds National Monument (Visitor Center Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1003">NE Lincoln 11 SW</a> (Audubon Society (Spring Creek Prairie Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1004">NE Lincoln 8 ENE</a> (University of Nebraska (Prairie Pines Site))</li>
+  
+  <a href="#top"><img src="/isis/images/top-clear.png" alt="top" title="top" class="bluebutton"
+    style="list-style:none;margin-left:-3em;_margin-left:-1em;_float:right;" /></a>
+  
+  <li><a href="/isis/station.htm?stationid=1115">NE Whitman 5 ENE</a> (Gudmundsen Sandhills Laboratory (Site 1))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1041">NH Durham 2 N</a> (University of New Hampshire (Kingman Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1040">NH Durham 2 SSW</a> (University of New Hampshire (Thompson Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1307">NM Las Cruces 20 N</a> (Jornada USDA ARS Experimental Range (Jornada Headquarters Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1138">NM Los Alamos 13 W</a> (NPS, Valles Caldera National Preserve)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1020">NM Socorro 20 N</a> (Sevilleta National Wildlife Refuge (LTER Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1106">NV Baker 5 W</a> (Great Basin National Park (Gravel Pit Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1532">NV Denio 52 WSW</a> (Sheldon National Wildlife Refuge, (Little Sheldon Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1049">NV Mercury 3 SSW</a> (Nevada Test Site (Desert Rock Meteorological Lab))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1117">NY Ithaca 13 E</a> (Cornell University (Harford Teaching &amp; Research Center))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1118">NY Millbrook 3 W</a> (Institute of Ecosystem Studies (Environmental Monitoring Station))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1125">OH Coshocton 8 NNE</a> (North Appalachian Experimental Watershed (CRN site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1797">OH Wooster 3 SSE</a> (OSU, Ohio Agricultural Research &amp; Development Center (Snyder Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1068">OK Goodwell 2 E</a> (OK  Panhandle Research &amp; Extn. Center (Native Grassland Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1772">OK Goodwell 2 SE</a> (Oklahoma Panhandle State Univ., School of Agriculture (Permanent Pasture))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1005">OK Stillwater 2 W</a> (Oklahoma State Univ. (Ag.  Research Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1006">OK Stillwater 5 WNW</a> (Oklahoma State University (Efaw Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1112">ON Egbert 1 W</a> (Environment Canada CARE site)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1610">OR Coos Bay 8 SW</a> (South Slough National Estuarine Research Reserve (Frederickson Marsh Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1234">OR Corvallis 10 SSW</a> (DOI, William L. Finley NWR (East end of Field 22))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1145">OR John Day 35 WNW</a> (John Day Fossil Beds Nat&#039;l. Mon.(Sheep Rock Hdqs.))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1023">OR Riley 10 WSW</a> (Northern Great Basin Experimental Range (Rainout Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1123">PA Avondale 2 N</a> (Stroud Water Research Center)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1042">RI Kingston 1 NW</a> (University of Rhode Island (Plains Road Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1043">RI Kingston 1 W</a> (University of Rhode Island (Peckham Farm Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1789">SA Tiksi 4 SSE</a> (Roshydromet Observatory at Tiksi)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1029">SC Blackville 3 W</a> (Clemson University (Edisto Research &amp; Edu. Ctr.))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1030">SC McClellanville 7 NE</a> (SCDNR (Santee Coastal Reserve))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1446">SD Aberdeen 35 WNW</a> (The Nature Conservancy (Samuel H. Ordway Prairie, Hdq. Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1140">SD Buffalo 13 ESE</a> (South Dakota School &amp; Public Lands)</li>
+  
+  <a href="#top"><img src="/isis/images/top-clear.png" alt="top" title="top" class="bluebutton"
+    style="list-style:none;margin-left:-3em;_margin-left:-1em;_float:right;" /></a>
+  
+  <li><a href="/isis/station.htm?stationid=1236">SD Pierre 24 S</a> (Fort Pierre National Grassland (Chester West))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1009">SD Sioux Falls 14 NNE</a> (EROS Data Center)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1121">TN Crossville 7 NW</a> (Univ. of Tennessee (Plateau Research and Education Center))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1147">TN Oakridge 0 N</a> (ATDD test site)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1386">TX Austin 33 NW</a> (Balcones National Wildlife Refuge (Flying X Ranch))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1130">TX Bronte 11 NNE</a> (Ft. Chadbourne Foundation, (Foundation Entrance Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1066">TX Edinburg 17 NNE</a> (Lower Rio Grande Valley NWR (La Sal Del Rey))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1019">TX Monahans 6 ENE</a> (Sandhills State Park)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1067">TX Muleshoe 19 S</a> (Muleshoe National Wildlife Refuge (Headquarters Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1018">TX Palestine 6 WNW</a> (NASA (National Scientific Balloon Facility))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1306">TX Panther Junction 2 N</a> (Big Bend National Park)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1387">TX Port Aransas 32 NNE</a> (Aransas National Wildlife Refuge (Weather Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1507">UT Brigham City 28 WNW</a> (Golden Spike National Historic Site (Visitor Center Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1509">UT Torrey 7 E</a> (Capitol Reef National Park, Goosenecks Road Site)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1085">VA Cape Charles 5 ENE</a> (Anheuser Busch Coastal Res. Ctr. Univ. of  VA (Oyster))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1346">VA Charlottesville 2 SSE</a> (Thomas Jefferson Foundation)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1305">VA Sterling 0 N</a> (Sterling HCN)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1017">WA Darrington 21 NNE</a> (North Cascades National Park (Marblemount))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1233">WA Quinault 4 NE</a> (Olympic National Park (Bishop Field Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1467">WA Spokane 17 SSW</a> (US Fish &amp; Wildlife Service, Turnbull NWR (Headquarters Site))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1114">WI Necedah 5 WNW</a> (Necedah National Wildlife Refuge (Rynearson Dam No. 2))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1024">WV Elkins 21 ENE</a> (Canaan Valley Resort State Park (Cabins Area))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1144">WY Lander 11 SSE</a> (Nature Conservancy (Red Canyon Ranch))</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1107">WY Moose 1 NNE</a> (Grand Teton National Park)</li>
+  
+  
+  <li><a href="/isis/station.htm?stationid=1487">WY Sundance 8 NNW</a> (Bear Lodge Ranger Dist, Black Hills NF (Massengale Flats Site))</li>
+  
+  
+</ul>
+<div id="pageControls" class="pageControls" style="display: none">
+	<span>
+		<span id="previousPage"><a>&lt; Previous</a></span>
+		<input type="text" id="currentPage" name="currentPage" size="1" value="1" style="text-align: right"/> of <span id="pageCount">1</span>
+		<span id="nextPage"><a>Next &gt;</a></span>
+	</span>
+</div>
+
+</form>
+<script type="text/javascript">
+pageFocus('optFocus');
+checkParams();
+setFocus();
+  document.getElementById('optFocus').focus();
+</script>
+
+</div> <!-- end content -->
+</td></tr></table>
+<!--  begin footer.tag -->
+
+
+
+
+
+
+
+
+
+		<!-- BEGIN Footer -->
+		<footer id="footer" class="clearfix">
+			<div class="inset">
+
+				<div class="subfooter">
+					<a role="link" href="http://www.commerce.gov/" rel="nofollow"><img src="/isis/images/logos/logo_doc_dark.png" alt="Click to visit the U.S. Department of Commerce Website" /></a>
+					<a role="link" href="http://www.usa.gov" rel="nofollow"><img src="/isis/images/logos/logo_usagov.png" alt="Click to visit USA.gov" /></a>
+					<a role="link" href="http://www.ready.gov" rel="nofollow"><img src="/isis/images/logos/logo_ready.png" alt="Click to visit Ready.gov" /></a>
+				</div>
+
+				<ul class="menu">
+					<li><a role="link" title="NCDC" href="//www.ncdc.noaa.gov/">NCEI</a></li>
+					<li><a role="link" title="About" href="//www.ncdc.noaa.gov/about">About</a></li>
+					<li><a role="link" title="General help section" href="//www.ncdc.noaa.gov/sitemap">Site Map</a></li>
+				</ul>
+
+				<ul class="menu">
+					<li><a role="link" title="NOAA's Privacy Policy" href="http://www.noaa.gov/privacy.html" rel="external nofollow">Privacy</a></li>
+					<li><a role="link" title="Freedom of Information Act" href="http://www.rdc.noaa.gov/%7Efoia/" rel="external nofollow">FOIA</a></li>
+					<li><a role="link" title="Information Quality" href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html" rel="external nofollow">Information Quality</a></li>
+					<li><a role="link" title="Disclaimer" href="http://www.noaa.gov/disclaimer.html" rel="external nofollow">Disclaimer</a></li>
+				</ul>
+
+				<ul class="menu last">
+					<li><a role="link" title="United States Department of Commerce" href="http://www.commerce.gov/" rel="external nofollow">Department of Commerce</a></li>
+					<li><a role="link" title="NOAA" href="http://www.noaa.gov" rel="external nofollow">NOAA</a></li>
+					<li><a role="link" title="NESDIS" href="http://www.nesdis.noaa.gov/" rel="external nofollow">NESDIS</a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+
+				<div id="footerCrumbs" class="clearfix">
+					<a class="ext" href="//www.commerce.gov/" target="_blank" title="Department of Commerce">Department of Commerce</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a class="ext" href="//www.noaa.gov/" target="_blank" title="NOAA">NOAA</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a class="ext" href="//www.nesdis.noaa.gov/" target="_blank" title="NESDIS">NESDIS</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a href="//www.ncei.noaa.gov/" title="NCEI">NCEI</a>&nbsp;&gt;&nbsp;<a href="//www.ncdc.noaa.gov/" title="NCDC">NCDC</a>
+				</div>
+
+			</div><!-- /inset -->
+		</footer><!-- /#footer -->
+		<!-- END Footer -->
+
+</div> <!-- end main -->
+<script type='text/javascript' src='http://www.ncdc.noaa.gov/common/js/Federated-Analytics-min.js'></script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="/scripts/federated-analytics.js?agency=DOC%26subagency=NOAA"></script></body>
+</html>
