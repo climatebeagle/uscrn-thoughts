@@ -31,7 +31,6 @@ class StationInfo extends React.Component {
           {target.values_.uscrn.name.replace(/ /g, '\u00a0')}
         </Popover.Title>
         <Popover.Content>
-          <strong>Elevation(ft)</strong> {target.values_.uscrn.elevation}
           {target.values_.uscrn.description}
           <br></br>
           <strong>Id</strong> {target.values_.uscrn.id}
